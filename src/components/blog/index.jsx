@@ -8,7 +8,7 @@ const index = () => {
     return (
         <div className='sticky-header'>
             <div id="main-wrapper" className="main-wrapper">
-                <Header no_top_bar={true} />
+                <Header header_style={'2'} no_top_bar={true} disable_category={true} />
                 <BreadcrumbThree title="Blog Standard" subtitle="Blog 1" />
                 <BlogArea/>
                 <AdBanner/>
