@@ -1,9 +1,9 @@
 import React , { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-const SERVICE_ID = 'service_9bmcf8g';
-const TEMPLATE_ID = 'template_by2066g';
-const USER_ID = 'nueTfqOW6giLFKPQ3';
+const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
 
 const Result = () => {
     return (
@@ -18,10 +18,10 @@ const ContactUsForm = () => {
         e.preventDefault();
         emailjs
         .sendForm(
-            SERVICE_ID, 
-            TEMPLATE_ID, 
+            'service_9bmcf8g', 
+            'template_by2066g', 
             e.target, 
-            USER_ID
+            'nueTfqOW6giLFKPQ3'
         )
         .then( ( result ) => {
             console.log( result.text );
