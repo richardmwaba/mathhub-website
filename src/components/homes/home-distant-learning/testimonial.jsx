@@ -4,7 +4,7 @@ import { Autoplay, Pagination, EffectCoverflow } from "swiper";
 import Link from 'next/link';
 
 const testimonial_contents = {
-    pre_title: 'Testimonials',
+    pre_title: '',
     title: 'What Our Students Have To Say',
     text: 'Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor incididunt labore dolore magna aliquaenim ad minim.',
     testimonial_data: [

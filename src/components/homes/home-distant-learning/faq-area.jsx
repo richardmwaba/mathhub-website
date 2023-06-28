@@ -6,20 +6,22 @@ const accordion_items = [
     {
         id:'collapseOne',
         show:true,
-        title:'How can I contact a school directly?',
-        desc:'Lorem ipsum dolor sit amet consectur adipiscing elit sed eius mod ex tempor incididunt labore dolore magna aliquaenim ad minim eniam.'
+        title:'How are the lessons conducted?',
+        desc:'Our lessons are conducted in small groups of no more than 4 students at a time. This is to ensure that each learner gets as much attention as they need.'
     },
     {
         id:'collapseTwo',
         show:false,
-        title:'How do I find a school where I want to study?',
-        desc:'Lorem ipsum dolor sit amet consectur adipiscing elit sed eius mod ex tempor incididunt labore dolore magna aliquaenim ad minim eniam.'
+        title:'How long is each learning session?',
+        desc:'Each lesson is ~60 minutes or 1 hour long, with room to go over the time limit if need be. We have developed teaching technques that also' 
+            + 'involve working with real tangible objects that allow students to grasp concepts and understand techniques faster.'
     },
     {
         id:'collapseThree',
         show:false,
-        title:'Where should I study abroad?',
-        desc:'Lorem ipsum dolor sit amet consectur adipiscing elit sed eius mod ex tempor incididunt labore dolore magna aliquaenim ad minim eniam.'
+        title:'What are the payment terms?',
+        desc:'Payments are upfront for at least a month. We have different price points depending on the frequency of lessons. Contact us using the details' 
+            + 'provided in the contact section to find out more. '
     }
 ];
 
@@ -102,7 +104,7 @@ const FaqArea = () => {
                         <div className="edu-faq-content">
                             <div className="section-title section-left">
                                 <span className="pre-title">FAQ’s</span>
-                                <h2 className="title">Over 10 Years in <span className="color-secondary">Distant <br /> Skill</span> Development</h2>
+                                <h2 className="title">Frequently <span className="color-secondary">Asked <br /> Questions</span> </h2>
                                 <span className="shape-line">
                                     <i className="icon-19"></i>
                                 </span>

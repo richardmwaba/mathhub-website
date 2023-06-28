@@ -4,7 +4,7 @@ import FooterSocial from "./component/footer-social";
 const footer_contents = {
     logoLight: '/assets/images/logo/mathhub-with-text.png',
     logoDark: '/assets/images/logo/mathhub-with-text.png',
-    desc: 'Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore.',
+    desc: 'Want to find out more? Please visit our location, email or call us using the details below.',
     add: 'Plot No. 6056, Sibweni Rd, Northmead, Lusaka ZM',
     call: '+260 978 403221',
     email: 'info@hubformath.com',
@@ -12,27 +12,12 @@ const footer_contents = {
         {
             col: '3',
             class: 'explore-widget',
-            widget_title: 'Online Platform',
+            widget_title: 'Links',
             footer_links: [
                 { link: 'about-1', title: 'About' },
                 { link: 'course-style-1', title: 'Courses' },
-                { link: 'team-1', title: 'Instructor' },
-                { link: 'event-grid', title: 'Events' },
-                { link: 'team-details', title: 'Instructor Profile' },
-                { link: 'purchase-guide', title: 'Purchase Guide' }
-            ]
-        },
-        {
-            col: '2',
-            class: 'quick-link-widget',
-            widget_title: 'Links',
-            footer_links: [
                 { link: 'contact-us', title: 'Contact Us' },
-                { link: 'gallery-grid', title: 'Gallery' },
-                { link: 'blog-standard', title: 'News & Articles' },
-                { link: 'faq', title: "FAQ's" },
-                { link: 'sign-in', title: 'Sign In/Registration' },
-                { link: 'coming-soon', title: 'Coming Soon' }
+                { link: 'faq', title: "FAQ's" }
             ]
         }
     ]
@@ -47,7 +32,7 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
             <div className={`footer-top ${style_2 ? "footer-top-2" : ""}`}>
                 <div className="container">
                     <div className="row g-5">
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-5 col-md-6">
                             <div className="edu-footer-widget">
                                 <div className="logo">
                                     <Link href={'/'}>
@@ -70,8 +55,8 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
                                 <div className="widget-information">
                                     <ul className="information-list">
                                         <li><span>Add:</span>{add}</li>
-                                        <li><span>Call:</span><a href="tel:+011235641231">{call}</a></li>
-                                        <li><span>Email:</span><a href="mailto:info@edublink.com" rel="noreferrer" target="_blank">{email}</a></li>
+                                        <li><span>Call:</span><a href="tel:+260978403221">{call}</a></li>
+                                        <li><span>Email:</span><a href="mailto:info@hubformath.com" rel="noreferrer" target="_blank">{email}</a></li>
                                     </ul>
                                 </div>
                             </div>

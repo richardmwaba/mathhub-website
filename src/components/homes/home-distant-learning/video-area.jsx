@@ -15,10 +15,10 @@ const VideoArea = ({about_p_2}) => {
                         <div className="col-lg-9">
                             <div className="video-gallery">
                                 <div className="thumbnail">
-                                    <img src="/assets/images/others/video-01.jpg" alt="Thumb" />
+                                    {/* <img src="/assets/images/others/video-01.jpg" alt="Thumb" />
                                     <button onClick={ ()=> setIsVideoOpen(true) } className="video-play-btn video-popup-activation"> 
                                         <i className="icon-18"></i>
-                                    </button>
+                                    </button> */}
                                 </div>
                                 <ul className="shape-group">
                                     <li className="shape-1 scene">

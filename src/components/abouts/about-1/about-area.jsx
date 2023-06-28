@@ -20,14 +20,11 @@ const AboutArea = () => {
                                 <span className="pre-title">About Us</span>
                                 <h2 className="title">We are <span className="color-secondary">Happy</span> Teachers.</h2>
                                 <span className="shape-line"><i className="icon-19"></i></span>
-                                <p>We are a team of happy tutors who consider ourselves as glowing candles, igniting the minds of students in a world filled with challenges.<br/>
-                                Our mission is to create a brighter future by dedicating ourselves to helping students grasp concepts and techniques profoundly. <br/>
-                                We strive to ensure that students gain a deep understanding and excel in their academic journeys, ultimately contributing to a brighter world.
+                                <p style={{fontSize: 18, lineHeight: 1.75 }}><b>We are a team of happy tutors</b> who consider ourselves as glowing candles, igniting the minds of students in a world filled with challenges.<br/>
+                                <b>Our mission</b> is to create a brighter future by dedicating ourselves to helping students grasp concepts and techniques profoundly. <br/>
+                                <b>We strive to ensure that</b> students gain a deep understanding and excel in their academic journeys, ultimately contributing to a brighter world.
                                 </p>
                             </div>
-                            {/* <ul className="features-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                {lists.map((l,i) => <li key={i}>{l}</li>)}
-                            </ul> */}
                         </div>
                     </div>
                     <div className="col-lg-5">
