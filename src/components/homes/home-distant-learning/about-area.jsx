@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 
 const features_list = [
-    'Expert Trainers',
-    'Online Remote Learning',
-    'Lifetime Access'
+    'Expert Tutors',
+    'Condusive Learning Environment',
+    'Determined to Help Learners Learn'
 ];
 
 const AboutArea = () => {
@@ -50,11 +50,11 @@ const AboutArea = () => {
                         <div className="about-content">
                             <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                 <span className="pre-title">About Us</span>
-                                <h2 className="title">Over 10 Years in <span className="color-secondary">Distant learning</span> for Skill Development</h2>
+                                <h2 className="title">A Team of <span className="color-secondary">Happy Teachers</span> dedicated to helping students</h2>
                                 <span className="shape-line">
                                     <i className="icon-19"></i>
                                 </span>
-                                <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna aliquaenim ad minim.</p>
+                                <p>We are a team of happy tutors who consider ourselves as glowing candles, igniting the minds of students in a world filled with challenges.</p>
                             </div>
                             <ul className="features-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"> {features_list.map((l,i) => <li key={i}>{l}</li>)} </ul>
                         </div>

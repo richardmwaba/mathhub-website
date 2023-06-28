@@ -6,7 +6,7 @@ const menu_data = [
     },
     {
         title: "About",
-        link: "/about",
+        link: "/about-1",
         mega_menu: false,
     },
     {

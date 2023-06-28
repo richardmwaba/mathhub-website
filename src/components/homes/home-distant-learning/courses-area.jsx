@@ -8,7 +8,7 @@ const CoursesArea = () => {
             <div className="container">
                 <div className="section-title section-center" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title">Popular Courses</span>
-                    <h2 className="title">Pick A Course To Get Started</h2>
+                    <h2 className="title">Get Started with Our Popular Courses</h2>
                     <span className="shape-line"><i className="icon-19"></i></span>
                 </div>
                 <div className="row g-5">

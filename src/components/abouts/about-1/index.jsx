@@ -1,6 +1,6 @@
 import React from 'react';
 import { Footer, Header } from '../../../layout';
-import Breadcrumb from '../../breadcrumb/breadcrumb';
+import BreadcrumbThree from '../../breadcrumb/breadcrumb-3';
 import Testimonial from '../../homes/home-distant-learning/testimonial';
 import TeamArea from '../../homes/home-online-academy/team-area';
 import AboutArea from './about-area';
@@ -14,9 +14,8 @@ const index = () => {
         <div className='sticky-header'>
             <div id="main-wrapper" className="main-wrapper">
                 <Header header_style={'2'} no_top_bar={true} disable_category={true} />
-                <Breadcrumb title={'A Large Range of Course Learning Paths'} current_page="About Us 1" />
+                <BreadcrumbThree title={'About Us'} subtitle="About Us" />
                 <AboutArea/>
-                <BrandArea/>
                 <WhyChose/>
                 <Testimonial/>
                 <CounterArea/>

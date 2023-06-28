@@ -14,20 +14,23 @@ const AboutArea = () => {
         <div className="section-gap-large edu-about-area about-style-7">
             <div className="container">
                 <div className="row g-5 align-items-center">
-                    <div className="col-lg-5">
+                    <div className="col-lg-7">
                         <div className="about-content">
                             <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                 <span className="pre-title">About Us</span>
-                                <h2 className="title">We Providing The <span className="color-secondary">Best Quality</span> Online Courses.</h2>
+                                <h2 className="title">We are <span className="color-secondary">Happy</span> Teachers.</h2>
                                 <span className="shape-line"><i className="icon-19"></i></span>
-                                <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna aliquaenim ad minim.</p>
+                                <p>We are a team of happy tutors who consider ourselves as glowing candles, igniting the minds of students in a world filled with challenges.<br/>
+                                Our mission is to create a brighter future by dedicating ourselves to helping students grasp concepts and techniques profoundly. <br/>
+                                We strive to ensure that students gain a deep understanding and excel in their academic journeys, ultimately contributing to a brighter world.
+                                </p>
                             </div>
-                            <ul className="features-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            {/* <ul className="features-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                 {lists.map((l,i) => <li key={i}>{l}</li>)}
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
-                    <div className="col-lg-7">
+                    <div className="col-lg-5">
                         <div className="about-image-gallery">
                             <img className="main-img-1" src="/assets/images/about/about-11.webp" alt="About Image" />
                             <img className="main-img-2" src="/assets/images/about/about-12.webp" data-sal-delay="150" data-sal="slide-down" data-sal-duration="800" alt="About Image" />
