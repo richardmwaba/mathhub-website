@@ -16,28 +16,28 @@ const testimonial_contents = {
             title: 'Student'
         },
         {
-            img: '/assets/images/testimonial/testimonial-01.png',
+            img: '/assets/images/testimonial/testimonial-02.png',
             desc: 'Math hub is a very educating and engaging establishment that not only grows your knowledge mathematicaly but also general.....Math Hub is cool.',
             ratings: [1, 2, 3, 4, 5],
             name: 'Kuwunda Chirwa',
             title: 'Student'
         },
         {
-            img: '/assets/images/testimonial/testimonial-02.png',
+            img: '/assets/images/testimonial/testimonial-03.png',
             desc: 'My children have improved their Math skills a great deal. The tutors articulate Math considering each child\'s level. If u are looking for where to take your loved ones to make Math an everyday friend, then look no further than Math Hub.',
             ratings: [1, 2, 3, 4, 5],
             name: 'Chizi Namuchimba Musonda',
             title: 'Parent'
         },
         {
-            img: '/assets/images/testimonial/testimonial-03.png',
+            img: '/assets/images/testimonial/testimonial-04.png',
             desc: 'Math hub is the best place to take your kids. It\'s very conducive and clean. I highly recommend this place..',
             ratings: [1, 2, 3, 4, 5],
             name: 'Kalima Lumbwe',
             title: 'Parent'
         },
         {
-            img: '/assets/images/testimonial/testimonial-04.png',
+            img: '/assets/images/testimonial/testimonial-05.png',
             desc: 'Students in Zambia have excelled in mathematics with this service. Math Hub offers personalized mathematics education from staff that love and appreciate the power of numeracy. From its basics to its ultimate.',
             ratings: [1, 2, 3, 4, 5],
             name: 'Maambo Mumba',
