@@ -6,35 +6,42 @@ import Link from 'next/link';
 const testimonial_contents = {
     pre_title: '',
     title: 'What Our Students Have To Say',
-    text: 'Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor incididunt labore dolore magna aliquaenim ad minim.',
+    text: 'Here is what our students have to day about their learning experience and the great environment we provide.',
     testimonial_data: [
         {
             img: '/assets/images/testimonial/testimonial-01.png',
-            desc: 'Lorem ipsum dolor amet consec tur elit adicing sed do usmod zx tempor enim minim veniam quis nostrud exer citation.',
+            desc: 'I highly recommend Math Hub for students in all three major levels of education. The tutoring was excellent and in my experience, it made learning fun and enjoyable.',
             ratings: [1, 2, 3, 4, 5],
-            name: 'Ray Sanchez',
+            name: 'Benjamin Simpungwe',
+            title: 'Student'
+        },
+        {
+            img: '/assets/images/testimonial/testimonial-01.png',
+            desc: 'Math hub is a very educating and engaging establishment that not only grows your knowledge mathematicaly but also general.....Math Hub is cool.',
+            ratings: [1, 2, 3, 4, 5],
+            name: 'Kuwunda Chirwa',
             title: 'Student'
         },
         {
             img: '/assets/images/testimonial/testimonial-02.png',
-            desc: 'Lorem ipsum dolor amet consec tur elit adicing sed do usmod zx tempor enim minim veniam quis nostrud exer citation.',
+            desc: 'My children have improved their Math skills a great deal. The tutors articulate Math considering each child\'s level. If u are looking for where to take your loved ones to make Math an everyday friend, then look no further than Math Hub.',
             ratings: [1, 2, 3, 4, 5],
-            name: 'Thomas Lopez',
-            title: 'Designer'
+            name: 'Chizi Namuchimba Musonda',
+            title: 'Parent'
         },
         {
             img: '/assets/images/testimonial/testimonial-03.png',
-            desc: 'Lorem ipsum dolor amet consec tur elit adicing sed do usmod zx tempor enim minim veniam quis nostrud exer citation.',
+            desc: 'Math hub is the best place to take your kids. It\'s very conducive and clean. I highly recommend this place..',
             ratings: [1, 2, 3, 4, 5],
-            name: 'Amber Page',
-            title: 'Developer'
+            name: 'Kalima Lumbwe',
+            title: 'Parent'
         },
         {
             img: '/assets/images/testimonial/testimonial-04.png',
-            desc: 'Lorem ipsum dolor amet consec tur elit adicing sed do usmod zx tempor enim minim veniam quis nostrud exer citation.',
+            desc: 'Students in Zambia have excelled in mathematics with this service. Math Hub offers personalized mathematics education from staff that love and appreciate the power of numeracy. From its basics to its ultimate.',
             ratings: [1, 2, 3, 4, 5],
-            name: 'Robert Tapp',
-            title: 'Content Creator'
+            name: 'Maambo Mumba',
+            title: 'Business Developer'
         }
     ]
 }

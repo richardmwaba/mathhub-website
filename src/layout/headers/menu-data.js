@@ -10,14 +10,14 @@ const menu_data = [
         mega_menu: false,
     },
     {
-        title: "Courses",
+        title: "Syllabi",
         link: "#",
         mega_menu: false,
         submenus: [
-            { title: "Sciences", link: "/course-style-1" },
-            { title: "Math", link: "/course-style-1" },
-            { title: "Engineering", link: "/course-style-1" },
-            { title: "Other", link: "/course-style-1" },
+            { title: "Cambridge", link: "/cambridge" },
+            { title: "ECZ", link: "/ecz" },
+            { title: "Pre-University", link: "/pre-university" },
+            { title: "Pearson Edexcel", link: "/pearson-edexcel" },
         ],
     },
     {

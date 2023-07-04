@@ -3,7 +3,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { add_force_page, add_item_offset } from '../../redux/features/filter-slice';
 
-const SortingArea = ({course_items, num, setCourses, courses,course_list, items }) => {
+const SortingArea = ({course_items, num, setCourses, courses,course_list, items, syllabus }) => {
     const dispatch = useDispatch();
 
     const handleChange = (e) => {
@@ -34,12 +34,12 @@ const SortingArea = ({course_items, num, setCourses, courses,course_list, items 
                     <label>{course_list ? 'List' : 'Grid' }</label>
                     <ul className="switcher-btn">
                         <li>
-                            <Link href="/course-style-1">
+                            <Link href={"/" + syllabus}>
                                 <a className={!course_list?"active":''}><i className="icon-53"></i></a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/course-style-4">
+                            <Link href={"/" + syllabus + "-list"}>
                                 <a className={course_list?"active":''}><i className="icon-54"></i></a>
                             </Link>
                         </li>

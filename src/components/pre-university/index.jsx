@@ -1,15 +1,15 @@
 import React from 'react';
 import { Footer, Header } from '../../layout';
 import BreadcrumbThree from '../breadcrumb/breadcrumb-3';
-import CourseFourArea from './course-4-area';
+import CourseArea from './pre-university';
 
 const index = () => {
     return (
         <div className='sticky-header'>
             <div id="main-wrapper" className="main-wrapper">
-                <Header no_top_bar={true} />
-                <BreadcrumbThree title="Course Style 4" subtitle="Course Style 4" />
-                <CourseFourArea/>
+                <Header header_style={'2'} no_top_bar={true} disable_category={true} />
+                <BreadcrumbThree title="Pre-University" subtitle="Pre-University" />
+                <CourseArea/>
                 <Footer style_2={'footer-dark bg-image footer-style-2'} />
             </div>
         </div>

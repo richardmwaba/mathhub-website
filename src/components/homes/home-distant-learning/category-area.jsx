@@ -9,7 +9,8 @@ const contents = {
             text: 'Cambridge International Examinations',
             courses: 8,
             color: 'color-secondary-style',
-            delay: '200'
+            delay: '200',
+            link: "/cambridge"
         },
         {
             icon: <OffCanvasPrograms />,
@@ -17,7 +18,8 @@ const contents = {
             text: 'Examinations Council of Zambia.',
             courses: 5,
             color: 'color-extra08-style',
-            delay: '300'
+            delay: '300',
+            link: "/ecz"
         },
         {
             icon: <OnlineDegree />,
@@ -25,7 +27,8 @@ const contents = {
             text: 'University Foundation Undergraduate Courses',
             courses: 6,
             color: 'color-primary-style',
-            delay: '100'
+            delay: '100',
+            link: "/pre-university"
         },
         {
             icon: <HybridDistancePrograms />,
@@ -33,7 +36,8 @@ const contents = {
             text: 'Pearson Edexcel International',
             courses: 8,
             color: 'color-extra05-style',
-            delay: '400'
+            delay: '400',
+            link: "/pearson-edexcel"
         }
     ]
 }
@@ -57,7 +61,7 @@ const CategoryArea = () => {
                                     {category.icon}
                                 </div>
                                 <div className="content">
-                                    <Link href="/course-style-1">
+                                    <Link href={category.link}>
                                         <a>
                                             <h5 className="title">{category.title}</h5>
                                         </a>

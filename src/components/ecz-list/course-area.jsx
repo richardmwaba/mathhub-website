@@ -6,8 +6,7 @@ import SortingArea from '../course-filter/sorting-area';
 import CourseItems from './course-items';
 
 // course_items
-const course_items = course_data.filter((arr, index, self) =>
-    index === self.findIndex( ( i ) => ( i.img === arr.img && i.State === arr.State ) ) );
+const course_items = course_data.slice(0,4);
 
 const CourseFourArea = () => {
     const [courses, setCourses] = useState(course_items);
@@ -44,10 +43,10 @@ const CourseFourArea = () => {
 
                     <div className="col-lg-9 col-pl--35">
                         {/* sorting area start */}
-                        <SortingArea course_items={course_items} course_list={true} num={showing} setCourses={setCourses} courses={courses} items={items}  />
+                        <SortingArea course_items={course_items} course_list={true} num={showing} setCourses={setCourses} courses={courses} items={course_items} syllabus="ecz"  />
                         {/* sorting area end */}
 
-                        <CourseItems itemsPerPage={6} items={items} course_style="8" setShowing={setShowing} />
+                        <CourseItems itemsPerPage={4} items={course_items} course_style="8" setShowing={setShowing} />
                     </div>
                 </div>
             </div>

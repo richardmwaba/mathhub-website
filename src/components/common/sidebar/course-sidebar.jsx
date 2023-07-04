@@ -1,27 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
 import { useDispatch, useSelector } from "react-redux";
-import { course_data } from "../../../data";
-import { add_category, add_force_page, add_instructor, add_item_offset, add_language, add_level, add_price, reset_filter }
+import { add_category, add_force_page, add_item_offset, add_language, add_level, reset_filter }
   from '../../../redux/features/filter-slice';
   
 
-const courses = course_data.filter(
-    (arr, index, self) => index === self.findIndex((i) => i.img === arr.img && i.State === arr.State)
-);
-const max_prices = courses.map((item) => Number(item.course_price));
-const maxPrice = Math.max(...max_prices);
-const minPrice = Math.min(...max_prices);
-
-const all_categories = [...new Set(courses.map((course) => course.category))];
-const all_instructors = [...new Set(courses.map((course) => course.instructor))];
-const all_levels = [...new Set(courses.map((course) => course.level))];
-const all_languages = [...new Set(courses.map((course) => course.language))];
-
 const CourseSidebar = ({ course_items }) => {
-    const [price, setPrice] = useState(maxPrice);
-    const { categories, instructors, levels, languages, forcePage } = useSelector((state) => state.filter);
+    const courses = course_items;
+
+    const all_categories = [...new Set(courses.map((course) => course.category))];
+    const all_levels = [...new Set(courses.map((course) => course.level))];
+    const all_languages = [...new Set(courses.map((course) => course.language))];
+    const { categories, levels, languages } = useSelector((state) => state.filter);
     const dispatch = useDispatch();
 
     // handleCategory
@@ -29,20 +18,13 @@ const CourseSidebar = ({ course_items }) => {
         const index = categories.findIndex((item) => item === cate);
         if (index >= 0) {
             dispatch(
-                add_category({ changeType: "remove", item: cate, maxPrice })
+                add_category({ changeType: "remove", item: cate })
             );
         } else {
             dispatch(
-                add_category({ changeType: "added", item: cate, maxPrice })
+                add_category({ changeType: "added", item: cate })
             );
         }
-        dispatch(add_item_offset(0));
-        dispatch(add_force_page(0));
-    };
-
-    // handleInstructor
-    const handleInstructor = (instructor) => {
-        dispatch(add_instructor({ instructor, maxPrice }));
         dispatch(add_item_offset(0));
         dispatch(add_force_page(0));
     };
@@ -61,23 +43,11 @@ const CourseSidebar = ({ course_items }) => {
         dispatch(add_force_page(0));
     };
 
-    // handlePrice
-    useEffect(() => {
-        dispatch(add_price(price));
-    }, [dispatch, price]);
-
-    // handlePriceChange
-    const handlePriceChange = (value) => {
-        setPrice(value);
-        dispatch(add_item_offset(0));
-        dispatch(add_force_page(0));
-    };
-
     return (
         <div className="edu-course-sidebar">
             <div className="edu-course-widget widget-category">
                 <div className="inner">
-                    <h5 className="widget-title">Filter by Categories</h5>
+                    <h5 className="widget-title">Filter by Syllabi</h5>
 
                     <div className="content">
                         {all_categories.map((c, i) => (
@@ -97,42 +67,6 @@ const CourseSidebar = ({ course_items }) => {
                                                 course_items.filter(
                                                 (item) =>
                                                     item.category === c
-                                                )?.length
-                                            }
-                                        )
-                                    </span>
-                                </label>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            <div className="edu-course-widget widget-instructor">
-                <div className="inner">
-                    <h5 className="widget-title">Instructor</h5>
-
-                    <div className="content">
-                        {all_instructors.map((instructor, i) => (
-                            <div key={i} className="edu-form-check">
-                                <input
-                                    onClick={() => handleInstructor(instructor)}
-                                    checked={instructors.includes(
-                                        instructor
-                                    )}
-                                    type="checkbox"
-                                    id={`cat-check-2${i + 1}`}
-                                    readOnly
-                                />
-                                <label htmlFor={`cat-check-2${i + 1}`}>
-                                    {instructor}
-                                    <span>
-                                        (
-                                            {
-                                                course_items.filter(
-                                                (item) =>
-                                                    item.instructor ===
-                                                    instructor
                                                 )?.length
                                             }
                                         )
@@ -209,20 +143,6 @@ const CourseSidebar = ({ course_items }) => {
                         ))}
                     </div>
                 </div>
-            </div>
-
-            <div className="edu-course-widget widget-rating">
-                <h5 className="widget-title">Price Filter</h5>
-                
-                <Slider
-                    value={price}
-                    min={minPrice}
-                    max={maxPrice}
-                    tooltip={false}
-                    orientation="horizontal"
-                    onChange={(val) => handlePriceChange(val)}
-                />
-                <div className='filter-price'>Price: <span>${minPrice}</span> <span>-</span> <span>${price}</span></div>
             </div>
 
             <div className="edu-course-widget widget-rating">
