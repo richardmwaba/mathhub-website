@@ -17,7 +17,7 @@ const HeroArea = () => {
                                 Join us today for the best lerning experience with our happy teachers.
                             </p>
                             <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                <Link href="/course-style-1">
+                                <Link href="/all-courses-list">
                                     <a className="edu-btn">Find courses <i className="icon-4"></i></a>
                                 </Link>
                             </div>
