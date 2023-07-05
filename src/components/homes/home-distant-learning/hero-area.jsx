@@ -29,7 +29,7 @@ const HeroArea = () => {
                                 <img src="/assets/images/banner/classroom.webp" alt="Classroom" />
                             </div>
                             <div className="thumbnail thumbnail-2" data-sal-delay="500" data-sal="slide-down" data-sal-duration="1000">
-                                <img src="/assets/images/banner/man-1.webp" alt="Man Image" />
+                                <img src="/assets/images/banner/graduation.jpg" alt="Graduation Image" />
                             </div>
                             <div className="online-support" data-sal-delay="600" data-sal="slide-right" data-sal-duration="1000">
                                 <div className="inner">

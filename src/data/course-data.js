@@ -70,7 +70,7 @@ const course_data = [
   },
   {
     id: 2,
-    img: 'course-01.jpg',
+    img: 'course-02.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -139,7 +139,7 @@ const course_data = [
   },
   {
     id: 3,
-    img: 'course-01.jpg',
+    img: 'course-03.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
