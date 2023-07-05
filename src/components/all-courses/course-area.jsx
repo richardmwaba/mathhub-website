@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { course_data } from '../../data';
 import SortingArea from '../course-filter/sorting-area';
 import CourseTypeOne from '../course/course-type-one';
