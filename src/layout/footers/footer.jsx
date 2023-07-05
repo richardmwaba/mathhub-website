@@ -14,8 +14,8 @@ const footer_contents = {
             class: 'explore-widget',
             widget_title: 'Links',
             footer_links: [
-                { link: 'about-1', title: 'About' },
-                { link: 'course-style-1', title: 'Courses' },
+                { link: 'about-us', title: 'About' },
+                { link: 'all-courses-list', title: 'Courses' },
                 { link: 'contact-us', title: 'Contact Us' },
                 { link: 'faq', title: "FAQ's" }
             ]

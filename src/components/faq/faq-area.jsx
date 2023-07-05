@@ -1,6 +1,29 @@
 import React from 'react';
 import SingleFaq from './single-faq';
 
+const faq_items = [
+    {
+        id:'lessons',
+        show:true,
+        title:'How are the lessons conducted?',
+        desc:'Our lessons are conducted in small groups of no more than 4 students at a time. This is to ensure that each learner gets as much attention as they need.'
+    },
+    {
+        id:'sessions',
+        show:false,
+        title:'How long is each learning session?',
+        desc:'Each lesson is ~60 minutes or 1 hour long, with room to go over the time limit if need be. We have developed teaching technques that also' 
+            + 'involve working with real tangible objects that allow students to grasp concepts and understand techniques faster.'
+    },
+    {
+        id:'payment',
+        show:false,
+        title:'What are the payment terms?',
+        desc:'Payments are upfront for at least a month. We have different price points depending on the frequency of lessons. Contact us using the details' 
+            + 'provided in the contact section to find out more. '
+    }
+];
+
 function NavTab({ active = false, id, title }) {
     return (
         <li className="nav-item" role="presentation">
@@ -17,16 +40,12 @@ const FaqArea = () => {
                 <div className="row">
                     <div className="col-lg-4">
                         <div className="faq-page-nav">
-                            <h3 className="title">Questions By This Category</h3>
-                            <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eius mod ex tempor incididunt labore.</p>
+                            <h3 className="title">Questions By Category</h3>
+                            <p>Check our frequently asked questions by category. If you have more question, feel free to contact via information provided in the footer.</p>
 
                             <ul className="nav nav-tabs" role="tablist">
                                 <NavTab active={true} id="gn-ques" title="General Questions" />
-                                <NavTab id="rg-ques" title="Regular Questions" />
-                                <NavTab id="ad-ques" title="Advanced Questions" />
-                                <NavTab id="com-policy" title="Company Policies" />
-                                <NavTab id="pay-option" title="Payment Options" />
-                                <NavTab id="terms-condition" title="Terms & Conditions" />
+                                {/* <NavTab id="terms-condition" title="Terms & Conditions" /> */}
                             </ul>
                         </div>
                     </div>
@@ -35,80 +54,16 @@ const FaqArea = () => {
                             <div className="tab-pane fade show active" id="gn-ques" role="tabpanel">
                                 <div className="faq-accordion">
                                     <div className="accordion">
-                                        <SingleFaq show={true} id="1" title="How can I contact a school directly?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
+                                        {faq_items.map((item) => { const {desc,id,show,title} = item; 
+                                            return (
+                                                <SingleFaq show={show} title={title} desc={desc} id={id} />
+                                            )
+                                        })} 
 
-                                        <SingleFaq id="2" title="How do I find a school where I want to study?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="3" title=" Where should I study abroad?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="4" title="Where can I find information on private companies?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="5" title="How do I find a study abroad program?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="6" title="Am I eligible for admission?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="7" title="What kind of support does EduBlink provide?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="tab-pane fade" id="rg-ques" role="tabpanel">
-                                <div className="faq-accordion">
-                                    <div className="accordion">
-                                        <SingleFaq show={true} id="8" title="How long is my personal free trial?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="9" title="How do I find a school where I want to study?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="10" title="Where should I study abroad?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="11" title="Where can I find information on private companies?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="12" title="How do I find a study abroad program?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="13" title="Am I eligible for admission?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="tab-pane fade" id="ad-ques" role="tabpanel">
-                                <div className="faq-accordion">
-                                    <div className="accordion">
-                                        <SingleFaq show={true} id="14" title="Where can I find information on private companies?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="15" title="How do I find a study abroad program?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="16" title="Am I eligible for admission?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="17" title="What kind of support does EduBlink provide?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="tab-pane fade" id="com-policy" role="tabpanel">
-                                <div className="faq-accordion">
-                                    <div className="accordion">
-                                        <SingleFaq show={true} id="18" title="How do I find a study abroad program?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="19" title="Where can I find information on private companies?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="20" title="What kind of support does EduBlink provide?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="21" title="Am I eligible for admission?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="tab-pane fade" id="pay-option" role="tabpanel">
-                                <div className="faq-accordion">
-                                    <div className="accordion">
-                                        <SingleFaq show={true} id="22" title="How do I find a school where I want to study?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="23" title=" Where should I study abroad?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="24" title="Where can I find information on private companies?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-
-                                        <SingleFaq id="25" title="How do I find a study abroad program?" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco qui laboris nis aliquip commodo consequat." />
-                                    </div>
-                                </div>
-                            </div>
                             <div className="tab-pane fade" id="terms-condition" role="tabpanel">
                                 <div className="faq-accordion">
                                     <div className="accordion">

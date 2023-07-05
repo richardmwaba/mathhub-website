@@ -10,15 +10,15 @@ const WhyChose = () => {
             <div className="container edublink-animated-shape">
                 <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title">Why choose Math Hub</span>
-                    <h2 className="title">The Best <span className="color-secondary">Beneficial</span> Side <br /> of EduBlink</h2>
+                    <h2 className="title">The Best <span className="color-secondary">Part</span> about <br/> Learning at Math Hub</h2>
                     <span className="shape-line"><i className="icon-19"></i></span>
                 </div>
                 <div className="row g-5">
-                    <ChoseBox color="color-primary-style" icon="45" title="High Quality Courses" subtitle="Lorem ipsum dolor sit amet conset ur elit sed eiusmod ex tempor inc labore dolore magna." />
+                    <ChoseBox color="color-primary-style" icon="45" title="Expert Tutors" subtitle="Expert tutors with several years of experience, and passionate about teaching." />
 
-                    <ChoseBox color="color-secondary-style" icon="46" title="Life Time Access" subtitle="Lorem ipsum dolor sit amet conset ur elit sed eiusmod ex tempor inc labore dolore magna." />
+                    <ChoseBox color="color-secondary-style" icon="46" title="Conducive Learning Environment" subtitle="A welcoming and supportive environment for learning." />
 
-                    <ChoseBox color="color-extra08-style" icon="47" title="Expert Instructors" subtitle="Lorem ipsum dolor sit amet conset ur elit sed eiusmod ex tempor inc labore dolore magna." />
+                    <ChoseBox color="color-extra08-style" icon="47" title="Determined to Help Learners Learn" subtitle="Meet students at what level they are and elevate them." />
                 </div>
                 <ul className="shape-group">
                     <li className="shape-5" data-sal-delay="500" data-sal="fade" data-sal-duration="200">

@@ -3,7 +3,7 @@ import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 
 const features_list = [
     'Expert Tutors',
-    'Condusive Learning Environment',
+    'Conducive Learning Environment',
     'Determined to Help Learners Learn'
 ];
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Footer, Header } from '../../layout';
 import BreadcrumbThree from '../breadcrumb/breadcrumb-3';
-import CourseArea from './pre-university';
+import CourseArea from './course-area';
 
 const index = () => {
     return (
