@@ -5,7 +5,7 @@ import VideoArea from '../../homes/home-distant-learning/video-area';
 import AdBanner from '../../homes/home-university/ad-banner';
 import Testimonial from '../../homes/home-university/testimonial';
 import TeamArea from './team-area';
-import BrandArea from '../about-1/brand-area';
+import BrandArea from '../about-us/brand-area';
 import CounterArea from './counter-area';
 import WhyChose from './why-chose';
 
