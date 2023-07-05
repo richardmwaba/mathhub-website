@@ -1,5 +1,5 @@
 import React from 'react';
-import ChoseBox from '../about-1/chose-box-item';
+import ChoseBox from '../about-us/chose-box-item';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 
