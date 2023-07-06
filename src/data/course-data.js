@@ -1,7 +1,7 @@
 const course_data = [
   {
     id: 1,
-    img: 'course-01.jpg',
+    img: 'mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -70,7 +70,7 @@ const course_data = [
   },
   {
     id: 2,
-    img: 'course-02.jpg',
+    img: 'physics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -139,7 +139,7 @@ const course_data = [
   },
   {
     id: 3,
-    img: 'course-03.jpg',
+    img: 'chemistry.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -208,7 +208,76 @@ const course_data = [
   },
   {
     id: 4,
-    img: 'course-01.jpg',
+    img: 'biology.png',
+    duration: '12 lessons /Month',
+    course_outline:'Online + Onsite',
+    level: 'Grade 8 to 12',
+    title: 'Biology',
+    rating: '4.9',
+    rating_count: 8,
+    course_price: '49.00',
+    lesson: 12,
+    student: 28,
+    category:'Examinations Council of Zambia',
+    short_desc: 'Biology based on the Examinations Council of Zambia syllabus.',
+    instructor: '',
+    instructor_img:'',
+    instructor_title:'',
+    instructor_desc:'',
+    features: [
+      'Build fully-fledged websites and web apps for your business.',
+      'After the course you will be able to build ANY website you want.',
+      'You will master both front and back-end development technologies.'
+    ], 
+    social_links:[
+      {link: 'http://facebook.com', target: '_blank', icon: 'icon-facebook'},
+      {link: 'http://twitter.com', target: '_blank', icon: 'icon-twitter'},
+      {link: 'https://www.linkedin.com/', target: '_blank', icon: 'icon-linkedin2'},
+      {link: 'https://www.youtube.com/', target: '_blank', icon: 'icon-youtube'}
+    ],
+    language: 'English',
+    certificate: 'no',
+    videoId: '',
+    course_desc: '',
+    course_desc_2: '',
+    learn_list: [''],
+    course_desc_3: '',
+    curriculum_desc: '',
+    course_lessons: [
+      {
+        title: 'Week 1-4',
+        text: 'Advanced story telling techniques for writers: Personas, Characters & Plots',
+        lessons: [
+          { title: 'Introduction', icon: 'icon-68' },
+          { title: 'Course Overview', icon: 'icon-68' },
+          { title: 'Course Overview', badge_list: true, question: 0, minutes: 10 },
+          { title: 'Course Exercise / Reference Files', icon: 'icon-68' },
+          { title: 'Code Editor Installation (Optional if you have one)', icon: 'icon-68' },
+          { title: ' Embedding PHP in HTML', icon: 'icon-68' },
+        ]
+      },
+      {
+        title: 'Week 5-8',
+        text: 'Advanced story telling techniques for writers: Personas, Characters & Plots',
+        lessons: [
+          { title: 'Defining Functions', icon: 'icon-68' },
+          { title: 'Function Parameters', icon: 'icon-68' },
+          { title: ' Return Values From Functions', badge_list: true, question: 2, minutes: 15 },
+          { title: ' Global Variable and Scope', icon: 'icon-68' },
+          { title: 'Newer Way of creating a Constant', icon: 'icon-68' },
+          { title: 'Constants', icon: 'icon-68' },
+        ]
+      },
+    ],
+    reviews:[
+      {img:'/assets/images/blog/comment-01.jpg',rating:5,name:'Haley Bennet',date:'Oct 10, 2021',desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+      {img:'/assets/images/blog/comment-02.jpg',rating:5,name:'Simon Baker',date:'Oct 15, 2021',desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+      {img:'/assets/images/blog/comment-03.jpg',rating:5,name:'Richard Gere',date:'Oct 19, 2021',desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    ]
+  },
+  {
+    id: 5,
+    img: 'additional-mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -276,7 +345,7 @@ const course_data = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -345,7 +414,7 @@ const course_data = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -414,7 +483,7 @@ const course_data = [
     ]
   },
   {
-    id: 7,
+    id: 8,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -483,7 +552,7 @@ const course_data = [
     ]
   },
   {
-    id: 8,
+    id: 9,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -552,7 +621,7 @@ const course_data = [
     ]
   },
   {
-    id: 9,
+    id: 10,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -621,7 +690,7 @@ const course_data = [
     ]
   },
   {
-    id: 10,
+    id: 11,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -690,7 +759,7 @@ const course_data = [
     ]
   },
   {
-    id: 11,
+    id: 12,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -759,7 +828,7 @@ const course_data = [
     ]
   },
   {
-    id: 12,
+    id: 13,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -828,7 +897,7 @@ const course_data = [
     ]
   },
   {
-    id: 13,
+    id: 14,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -897,7 +966,7 @@ const course_data = [
     ]
   },
   {
-    id: 14,
+    id: 15,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -966,7 +1035,7 @@ const course_data = [
     ]
   },
   {
-    id: 15,
+    id: 16,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1035,7 +1104,7 @@ const course_data = [
     ]
   },
   {
-    id: 16,
+    id: 17,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1104,7 +1173,7 @@ const course_data = [
     ]
   },
   {
-    id: 17,
+    id: 18,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1173,7 +1242,7 @@ const course_data = [
     ]
   },
   {
-    id: 18,
+    id: 19,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1242,7 +1311,7 @@ const course_data = [
     ]
   },
   {
-    id: 19,
+    id: 20,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1311,7 +1380,7 @@ const course_data = [
     ]
   },
   {
-    id: 20,
+    id: 21,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1380,7 +1449,7 @@ const course_data = [
     ]
   },
   {
-    id: 21,
+    id: 22,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1449,7 +1518,7 @@ const course_data = [
     ]
   },
   {
-    id: 22,
+    id: 23,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1518,7 +1587,7 @@ const course_data = [
     ]
   },
   {
-    id: 23,
+    id: 24,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1587,7 +1656,7 @@ const course_data = [
     ]
   },
   {
-    id: 24,
+    id: 25,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1656,7 +1725,7 @@ const course_data = [
     ]
   },
   {
-    id: 25,
+    id: 26,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
@@ -1725,7 +1794,7 @@ const course_data = [
     ]
   },
   {
-    id: 26,
+    id: 27,
     img: 'course-01.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
