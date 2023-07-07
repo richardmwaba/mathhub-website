@@ -48,7 +48,7 @@ const CourseItems = ({ itemsPerPage, items, course_style, setShowing }) => {
 
     return (
         <>
-            {currentItems && currentItems.map((course, i) => {
+            {currentItems?.map((course, i) => {
                 return (
                     <CourseTypeFive key={i} data={course} />
                 )

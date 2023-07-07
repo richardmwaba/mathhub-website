@@ -6,7 +6,7 @@ import SortingArea from '../course-filter/sorting-area';
 import CourseItems from './course-items';
 
 // course_items
-const course_items = course_data.slice(12,20);
+const course_items = course_data.slice(13,21);
 
 const CourseFourArea = () => {
     const [courses, setCourses] = useState(course_items);

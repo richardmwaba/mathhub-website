@@ -208,7 +208,7 @@ const course_data = [
   },
   {
     id: 4,
-    img: 'biology.png',
+    img: 'biology.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -346,7 +346,7 @@ const course_data = [
   },
   {
     id: 6,
-    img: 'course-01.jpg',
+    img: 'mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -415,7 +415,7 @@ const course_data = [
   },
   {
     id: 7,
-    img: 'course-01.jpg',
+    img: 'additional-mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -484,7 +484,7 @@ const course_data = [
   },
   {
     id: 8,
-    img: 'course-01.jpg',
+    img: 'pure-mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -553,7 +553,7 @@ const course_data = [
   },
   {
     id: 9,
-    img: 'course-01.jpg',
+    img: 'probability-and-statistics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -622,7 +622,7 @@ const course_data = [
   },
   {
     id: 10,
-    img: 'course-01.jpg',
+    img: 'mechanics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -691,7 +691,7 @@ const course_data = [
   },
   {
     id: 11,
-    img: 'course-01.jpg',
+    img: 'physics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -760,7 +760,7 @@ const course_data = [
   },
   {
     id: 12,
-    img: 'course-01.jpg',
+    img: 'chemistry.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -829,7 +829,7 @@ const course_data = [
   },
   {
     id: 13,
-    img: 'course-01.jpg',
+    img: 'biology.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -898,7 +898,7 @@ const course_data = [
   },
   {
     id: 14,
-    img: 'course-01.jpg',
+    img: 'mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -967,7 +967,7 @@ const course_data = [
   },
   {
     id: 15,
-    img: 'course-01.jpg',
+    img: 'additional-mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -1036,7 +1036,7 @@ const course_data = [
   },
   {
     id: 16,
-    img: 'course-01.jpg',
+    img: 'pure-mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -1105,7 +1105,7 @@ const course_data = [
   },
   {
     id: 17,
-    img: 'course-01.jpg',
+    img: 'probability-and-statistics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -1174,7 +1174,7 @@ const course_data = [
   },
   {
     id: 18,
-    img: 'course-01.jpg',
+    img: 'mechanics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -1243,7 +1243,7 @@ const course_data = [
   },
   {
     id: 19,
-    img: 'course-01.jpg',
+    img: 'physics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -1312,7 +1312,7 @@ const course_data = [
   },
   {
     id: 20,
-    img: 'course-01.jpg',
+    img: 'chemistry.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -1381,7 +1381,7 @@ const course_data = [
   },
   {
     id: 21,
-    img: 'course-01.jpg',
+    img: 'biology.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'Grade 8 to 12',
@@ -1450,7 +1450,7 @@ const course_data = [
   },
   {
     id: 22,
-    img: 'course-01.jpg',
+    img: 'pure-mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'First Year',
@@ -1519,7 +1519,7 @@ const course_data = [
   },
   {
     id: 23,
-    img: 'course-01.jpg',
+    img: 'additional-mathematics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'First Year',
@@ -1588,7 +1588,7 @@ const course_data = [
   },
   {
     id: 24,
-    img: 'course-01.jpg',
+    img: 'probability-and-statistics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'First Year',
@@ -1657,7 +1657,7 @@ const course_data = [
   },
   {
     id: 25,
-    img: 'course-01.jpg',
+    img: 'physics.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'First Year',
@@ -1726,7 +1726,7 @@ const course_data = [
   },
   {
     id: 26,
-    img: 'course-01.jpg',
+    img: 'chemistry.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'First Year',
@@ -1795,7 +1795,7 @@ const course_data = [
   },
   {
     id: 27,
-    img: 'course-01.jpg',
+    img: 'biology.jpg',
     duration: '12 lessons /Month',
     course_outline:'Online + Onsite',
     level: 'First Year',

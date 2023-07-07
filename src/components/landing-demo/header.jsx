@@ -63,8 +63,8 @@ const Header = () => {
                             <div className="logo">
                                 <Link href="/">
                                     <a>
-                                        <img className="logo-light" src="/assets/images/logo/logo-dark.png" alt="Corporate Logo" />
-                                        <img className="logo-dark" src="/assets/images/logo/logo-white.png" alt="Corporate Logo" />
+                                    <img className="logo-light" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
+                                            <img className="logo-dark" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
                                     </a>
                                 </Link>
                             </div>

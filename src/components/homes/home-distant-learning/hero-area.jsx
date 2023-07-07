@@ -26,7 +26,7 @@ const HeroArea = () => {
                     <div className="col-lg-6">
                         <div className="banner-gallery">
                             <div className="thumbnail thumbnail-1" data-sal-delay="500" data-sal="slide-up" data-sal-duration="1000">
-                                <img src="/assets/images/banner/classroom.webp" alt="Classroom" />
+                                <img src="/assets/images/banner/lightbulb.jpg" alt="Light bulb" />
                             </div>
                             <div className="thumbnail thumbnail-2" data-sal-delay="500" data-sal="slide-down" data-sal-duration="1000">
                                 <img src="/assets/images/banner/graduation.jpg" alt="Graduation Image" />

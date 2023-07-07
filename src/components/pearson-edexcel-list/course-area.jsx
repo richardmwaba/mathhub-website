@@ -7,7 +7,7 @@ import CourseItems from './course-items';
 
 
 const CourseFourArea = () => {
-    const [courses, setCourses] = useState(course_data.slice(4,12));
+    const [courses, setCourses] = useState(course_data.slice(5,13));
     const [showing,setShowing] = useState(0);
 
     return (

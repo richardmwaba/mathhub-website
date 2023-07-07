@@ -7,7 +7,7 @@ import CourseTypeOne from '../course/course-type-one';
 const CourseArea = () => {
     const coursePerView = 4;
     const [next, setNext] = useState(coursePerView);
-    const [courses,setCourses] = useState(course_data.slice(20, 26));
+    const [courses,setCourses] = useState(course_data.slice(21, 27));
     // handleLoadData
     const handleLoadData = () => {
         setNext(value => value + 4)
