@@ -43,7 +43,7 @@ const CourseFiveArea = () => {
 
                     <div className="col-lg-9 col-pr--35 order-lg-1">
                         {/* sorting area start */}
-                        <SortingArea course_items={course_items} course_list={true} num={showing} setCourses={setCourses} courses={courses} items={items} />
+                        <SortingArea course_items={course_items} course_list={true} num={showing} setCourses={setCourses} courses={courses} items={items} syllabus="all-courses" />
                         {/* sorting area end */}
 
                         <CourseItems itemsPerPage={4} items={items} course_style="9" setShowing={setShowing} />

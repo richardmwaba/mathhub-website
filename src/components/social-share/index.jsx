@@ -1,9 +1,9 @@
 import React from 'react';
 
 const social_share = [
-    { link: 'http://facebook.com', target: '_blank', icon: 'icon-facebook',},
-    { link: 'http://twitter.com', target: '_blank', icon: 'icon-twitter', },
-    { link: 'https://www.linkedin.com/', target: '_blank', icon: 'icon-linkedin2'},
+    { link: 'https://www.facebook.com/lunkanga?mibextid=ZbWKwL', target: '_blank', icon: 'icon-facebook',},
+    { link: 'https://instagram.com/hub4math?igshid=MzRlODBiNWFlZA==', target: '_blank', icon: 'icon-instagram', },
+    { link: 'https://www.linkedin.com/company/math-hub-zm/', target: '_blank', icon: 'icon-linkedin2'},
 ];
 
 export const SocialShare = () => {

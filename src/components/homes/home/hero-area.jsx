@@ -18,7 +18,7 @@ const HeroArea = () => {
                             </p>
                             <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
                                 <Link href="/all-courses-list">
-                                    <a className="edu-btn">Find courses <i className="icon-4"></i></a>
+                                    <a className="edu-btn">Find subjects <i className="icon-4"></i></a>
                                 </Link>
                             </div>
                         </div>
