@@ -79,7 +79,7 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
                             <div className="edu-footer-widget">
                                 <h4 className="widget-title">Contacts</h4>
                                 <div className="inner">
-                                    <p className="description">Enter your email address to register to our newsletter subscription</p>
+                                    <p className="description">Enter your email address to register to our newsletter subscription.</p>
                                     <div className="input-group footer-subscription-form">
                                         <input type="email" className="form-control" placeholder="Your email" />
                                         <button className={`edu-btn ${dark_bg && !home_4?'btn-secondary':''} btn-medium`} type="button">Subscribe <i className="icon-4"></i></button>
