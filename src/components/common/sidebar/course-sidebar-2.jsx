@@ -56,7 +56,7 @@ const CourseSidebarTwo = ({ course_items }) => {
         <div className="course-sidebar-2">
             <div className="edu-course-widget widget-category">
                 <div className="inner">
-                    <h5 className={`widget-title widget-toggle ${showCategory?'active':''}`} onClick={()=> setShowCategory(!showCategory)}>Syllabi</h5>
+                    <h5 className={`widget-title widget-toggle ${showCategory?'active':''}`} onClick={()=> setShowCategory(!showCategory)}>Syllabus</h5>
 
                     <div className="content" style={{display:showCategory?'block':'none'}}>
                         {all_categories.map((c, i) => (
