@@ -36,22 +36,22 @@ const FaqArea = () => {
                             <div className="row g-5"> 
                                 <div className="col-6" data-sal-delay="50" data-sal="slide-right" data-sal-duration="800">
                                     <div className="faq-thumbnail thumbnail-1">
-                                        <img src="/assets/images/faq/faq-01.jpg" alt="Faq Images" />
+                                        <img src="/assets/images/faq/question-01.jpg" alt="Faq Images" />
                                     </div>
                                 </div>
                                 <div className="col-6" data-sal-delay="100" data-sal="slide-left" data-sal-duration="800">
                                     <div className="faq-thumbnail thumbnail-2">
-                                        <img src="/assets/images/faq/faq-02.jpg" alt="Faq Images" />
+                                        <img src="/assets/images/faq/question-02.jpg" alt="Faq Images" />
                                     </div>
                                 </div>
                                 <div className="col-6" data-sal-delay="50" data-sal="slide-right" data-sal-duration="800">
                                     <div className="faq-thumbnail thumbnail-3">
-                                        <img src="/assets/images/faq/faq-03.jpg" alt="Faq Images" />
+                                        <img src="/assets/images/faq/question-03.jpg" alt="Faq Images" />
                                     </div>
                                 </div>
                                 <div className="col-6" data-sal-delay="100" data-sal="slide-left" data-sal-duration="800">
                                     <div className="faq-thumbnail thumbnail-4">
-                                        <img src="/assets/images/faq/faq-04.webp" alt="Faq Images" />
+                                        <img src="/assets/images/faq/question-04.jpg" alt="Faq Images" />
                                     </div>
                                 </div>
                             </div>
