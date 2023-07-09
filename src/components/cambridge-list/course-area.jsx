@@ -6,7 +6,6 @@ import CourseSidebarTwo from '../common/sidebar/course-sidebar-2';
 import SortingArea from '../course-filter/sorting-area';
 import CourseItems from './course-items';
 
-// course_items
 const course_items = course_data.filter((arr, index, self) =>
 index === self.findIndex((i) => (i.img === arr.img && i.State === arr.State)));
 
