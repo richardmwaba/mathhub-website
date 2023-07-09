@@ -5,7 +5,7 @@ import AllCourses from '../components/all-courses-list';
 const AllCoursesListPage = () => {
     return (
         <Wrapper>
-            <SEO pageTitle={'All Courses'} />
+            <SEO pageTitle={'All Subjects'} />
             <AllCourses />
         </Wrapper>
     )

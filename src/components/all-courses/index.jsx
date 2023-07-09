@@ -8,7 +8,7 @@ const index = () => {
         <div className='sticky-header'>
             <div id="main-wrapper" className="main-wrapper">
                 <Header header_style={'2'} no_top_bar={true} disable_category={true} />
-                <BreadcrumbThree title="All Courses" subtitle="All Courses" />
+                <BreadcrumbThree title="All Subjects" subtitle="All Subjects" />
                 <CourseArea/>
                 <Footer style_2={'footer-dark bg-image footer-style-2'} />
             </div>
