@@ -5,7 +5,7 @@ import AllCourses from '../components/all-courses-list';
 const AllCoursesListPage = () => {
     return (
         <Wrapper>
-            <SEO pageTitle={'Pearson Edexcel'} />
+            <SEO pageTitle={'All Courses'} />
             <AllCourses />
         </Wrapper>
     )

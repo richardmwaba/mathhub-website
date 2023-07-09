@@ -12,7 +12,7 @@ const CourseItems = ({ itemsPerPage, items, course_style, setShowing }) => {
     const { page_count, item_offset, forcePage } = useSelector(
         (state) => state.filter
     );
-    const [currentItems, setCurrentItems] = useState(items);
+    const [currentItems, setCurrentItems] = useState(null);
     const [pageCount, setPageCount] = useState(page_count);
     const [itemOffset, setItemOffset] = useState(item_offset);
     const dispatch = useDispatch();
@@ -48,7 +48,7 @@ const CourseItems = ({ itemsPerPage, items, course_style, setShowing }) => {
 
     return (
         <>
-            {currentItems?.map((course, i) => {
+            {currentItems && currentItems.map((course, i) => {
                 return (
                     <CourseTypeFive key={i} data={course} />
                 )
