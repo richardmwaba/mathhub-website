@@ -1,36 +1,28 @@
 import React from 'react';
 import { Footer, Header } from '../../../layout';
 import AboutArea from './about-area';
-import AdBanner from './ad-banner';
-import BlogArea from './blog-area';
-import BrandArea from './brand-area';
 import CategoryArea from './category-area';
-import CounterUpArea from './counter-up-area';
-import CourseArea from './course-area';
-import CtaArea from './cta-area';
+import CounterArea from './counter-area';
+import CoursesArea from './courses-area';
+import FaqArea from './faq-area';
 import HeroArea from './hero-area';
-import TeamArea from './team-area';
-import TestimonialArea from './testimonial-area';
-import TopCategories from './top-categories';
+import Testimonial from './testimonial';
+import VideoArea from './video-area';
 
 const index = () => {
     return (
         <div className='sticky-header'>
             <div id="main-wrapper" className="main-wrapper">
-                <Header/>
+                <Header header_style={'2'} no_top_bar={true} disable_category={true}/>
                 <HeroArea/>
                 <CategoryArea/>
-                <TopCategories/>
                 <AboutArea/>
-                <CourseArea/>
-                <CounterUpArea/>
-                <TestimonialArea/>
-                <CtaArea/>
-                <TeamArea/>
-                <AdBanner/>
-                <BrandArea/>
-                <BlogArea/>
-                <Footer/>
+                <CoursesArea/>
+                <VideoArea/>
+                <CounterArea/>
+                <Testimonial/>
+                <FaqArea/>
+                <Footer style_2={'footer-dark bg-image footer-style-2'} />
             </div>
         </div>
     )

@@ -1,47 +1,55 @@
-const brand_contents = {
-    pre_title: 'Our Partners',
-    title: 'Learn with Our Partners',
-    text: 'Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor incididunt.',
-    brands: [
-        'assets/images/brand/brand-01.png',
-        'assets/images/brand/brand-02.png',
-        'assets/images/brand/brand-03.png',
-        'assets/images/brand/brand-04.png',
-        'assets/images/brand/brand-05.png',
-        'assets/images/brand/brand-06.png',
-        'assets/images/brand/brand-07.png',
-        'assets/images/brand/brand-08.png'
-    ]
-}
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 
-const { pre_title, title, text, brands } = brand_contents;
+const brand_images = [
+    '/assets/images/brand/brand-01.png',
+    '/assets/images/brand/brand-02.png',
+    '/assets/images/brand/brand-03.png',
+    '/assets/images/brand/brand-04.png'
+]
 
 const BrandArea = () => {
+    const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-brand-area brand-area-1 gap-top-equal">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-5">
-                        <div className="brand-section-heading">
-                            <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <span className="pre-title">{pre_title}</span>
-                                <h2 className="title">{title}</h2>
-                                <span className="shape-line"><i className="icon-19"></i></span>
-                                <p>{text}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-7">
-                        <div className="brand-grid-wrap">
-                            {brands.map((b, i) => (
-                                <div key={i} className="brand-grid">
-                                    <img src={b} alt="Brand Logo" />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+        <div className="edu-brand-area brand-area-2 bg-image">
+            <div className="container edublink-animated-shape">
+                <div className="brand-grid-wrap brand-style-4"> 
+                    {brand_images.map((img, i) => ( 
+                        <div key={i} className="brand-grid">
+                            <img src={img} alt="Brand Logo" />
+                        </div> 
+                    ))} 
                 </div>
+                <ul className="shape-group">
+                    <motion.li className="shape-1 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
+                        animate={ {
+                            x: mouseDirection(30).x,
+                            y: mouseDirection(30).y
+                        } }
+                    >
+                        <img src="/assets/images/about/shape-37.png" alt="Shape" />
+                    </motion.li>
+                </ul>
             </div>
+            <ul className="shape-group">
+                <motion.li className="shape-2 scene shape-light" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
+                    animate={ {
+                        x: mouseDirection(30).x,
+                        y: mouseDirection(30).y
+                    } }
+                >
+                    <img src="/assets/images/about/shape-41.png" alt="Shape" />
+                </motion.li>
+                <motion.li className="shape-2 scene shape-dark" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
+                    animate={ {
+                        x: mouseDirection(30).x,
+                        y: mouseDirection(30).y
+                    } }
+                >
+                    <img src="/assets/images/about/dark-shape-41.png" alt="Shape" />
+                </motion.li>
+            </ul>
         </div>
     )
 }

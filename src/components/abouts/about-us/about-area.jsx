@@ -29,8 +29,7 @@ const AboutArea = () => {
                     </div>
                     <div className="col-lg-5">
                         <div className="about-image-gallery">
-                            <img className="main-img-1" src="/assets/images/about/about-11.webp" alt="About Image" />
-                            <img className="main-img-2" src="/assets/images/about/about-12.webp" data-sal-delay="150" data-sal="slide-down" data-sal-duration="800" alt="About Image" />
+                            <img className="main-img-1" src="/assets/images/about/about.jpg" alt="About Image" />
                             <ul className="shape-group">
                                 <motion.li className="shape-1 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
                                     animate={ {

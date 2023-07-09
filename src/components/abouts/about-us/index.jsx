@@ -1,10 +1,8 @@
 import React from 'react';
 import { Footer, Header } from '../../../layout';
 import BreadcrumbThree from '../../breadcrumb/breadcrumb-3';
-import Testimonial from '../../homes/home-distant-learning/testimonial';
-import TeamArea from '../../homes/home-online-academy/team-area';
+import Testimonial from '../../homes/home/testimonial';
 import AboutArea from './about-area';
-import BrandArea from './brand-area';
 import CounterArea from './counter-area';
 import WhyChose from './why-chose';
 
