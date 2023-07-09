@@ -57,19 +57,16 @@ const CategoryArea = () => {
                     {contents.category_data.map((category, i) => (
                         <div key={i} className="col-lg-3 col-sm-6" data-sal-delay={category.delay} data-sal="slide-up" data-sal-duration="800">
                             <Link href={category.link}>
-                                <a>
-                                    <div className={`categorie-grid categorie-style-1 ${category.color} edublink-svg-animate`}>
-                                        
-                                        <div className="icon">
-                                            {category.icon}
-                                        </div>
-                                        <div className="content">
-                                            <h5 className="title">{category.title}</h5>
-                                            <p>{category.text}</p>
-                                            <div className="course-remain">{category.courses} Courses</div>
-                                        </div>
+                                <div className={`categorie-grid categorie-style-1 ${category.color} edublink-svg-animate`}>
+                                    <div className="icon">
+                                        {category.icon}
                                     </div>
-                                </a>
+                                    <div className="content">
+                                        <h5 className="title">{category.title}</h5>
+                                        <p>{category.text}</p>
+                                        <div className="course-remain">{category.courses} Courses</div>
+                                    </div>
+                                </div>
                             </Link>
                         </div>
                     ))}
