@@ -1,13 +1,15 @@
 import React , { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-const USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
-
 const Result = () => {
     return (
         <p className="success-message" style={{color: '#1ab69d', marginTop: '20px', marginBottom: '0'}}>Thanks for your query. We will contact with you soon.</p>
+    )
+}
+
+const Failure = () => {
+    return (
+        <p className="failure-message" style={{color: '#fa3c3c', marginTop: '20px', marginBottom: '0'}}>Something went wrong. Please try again.</p>
     )
 }
 
@@ -56,7 +58,7 @@ const ContactUsForm = () => {
                 <div className="form-group col-12">
                     <button className="rn-btn edu-btn btn-medium submit-btn" name="submit" type="submit">Submit Message <i className="icon-4"></i></button>
                 </div>
-                { result ? <div className="form-group"><Result /></div>  : null }
+                { result ? <div className="form-group"><Result /></div>  : <div className="form-group"><Failure /></div> }
             </div>
         </form>
   )
