@@ -14,7 +14,7 @@ const Failure = () => {
 }
 
 const ContactUsForm = () => {
-    const [result, setResult] = useState( false );
+    const [result, setResult] = useState( null );
 
     const sendEmail = ( e ) => {
         e.preventDefault();
@@ -29,11 +29,12 @@ const ContactUsForm = () => {
             console.log( result.text );
             }, 
             ( error ) => {
+                setResult( "FAILURE" )
                 console.log( error.text );
             }
         );
         e.target.reset();
-        setResult( true );
+        setResult("SUCCESS");
     };
 
     setTimeout(() => {
@@ -58,7 +59,8 @@ const ContactUsForm = () => {
                 <div className="form-group col-12">
                     <button className="rn-btn edu-btn btn-medium submit-btn" name="submit" type="submit">Submit Message <i className="icon-4"></i></button>
                 </div>
-                { result ? <div className="form-group"><Result /></div>  : <div className="form-group"><Failure /></div> }
+                { result === "SUCCESS" ? <div className="form-group"><Result /></div> : null }
+                { result === "FAILURE" ? <div className="form-group"><Failure /></div> : null }
             </div>
         </form>
   )
