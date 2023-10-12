@@ -59,16 +59,46 @@ const PaymentPolicy = () => {
                                         If a student fails to attend a class due
                                         to illness, they may be required to
                                         provide a legitimate Doctor's note as
-                                        proof of the aforementioned illness.
+                                        proof of the aforementioned illness. If
+                                        a lesson is missed due to illness, of
+                                        the tutor, both the student and Math Hub
+                                        are exempt from liability for the missed
+                                        lesson.
                                     </li>
                                     <li>
-                                        The students’ failure to attend class
+                                        The students’ failure to attend a lesson
                                         due to any reason other than legitimate
                                         illness does not absolve them of any
                                         financial responsibility, and does not
                                         warrant a make up class at a future date
                                         or time. Further, a refund cannot be
                                         claimed for the missed session.
+                                        <ul>
+                                            <li>
+                                                If a student misses a lesson
+                                                because it falls outside our
+                                                responsibility, that lesson will
+                                                not be considered a liability on
+                                                our part. A lesson will be
+                                                deemed a liability for us only
+                                                if it's missed on a day that
+                                                isn't a public holiday, from
+                                                Monday to Friday, outside the
+                                                agreed-upon lesson dates.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Regarding the rate, it is a calculated
+                                        figure that considers all lessons
+                                        scheduled within a 30-day period, all
+                                        other factors remaining equal. To
+                                        account for lessons missed due to our
+                                        responsibility, we will either
+                                        reschedule the missed lesson(s) for a
+                                        later date or extend the payment due
+                                        date to allow for makeup lessons at our
+                                        own descretion.
                                     </li>
                                 </ul>
                             </div>
@@ -117,7 +147,10 @@ const PaymentPolicy = () => {
                                         our preferred payment method.
                                     </li>
                                     <li>
-                                        You can also use a bank deposit by directly depositing into our Stanbic bank account. Below are the details; <br />
+                                        You can also use a bank deposit by
+                                        directly depositing into our Stanbic
+                                        bank account. Below are the details;{" "}
+                                        <br />
                                         <b>Account Number</b>: 9130005459048{" "}
                                         <br />
                                         <b>Branch</b>: Arcades <br />
@@ -173,7 +206,6 @@ const PaymentPolicy = () => {
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
