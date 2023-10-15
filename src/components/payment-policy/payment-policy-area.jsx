@@ -119,7 +119,7 @@ const PaymentPolicy = () => {
                                     <li>
                                         Short-term (1 month to 4 months) – day
                                         of the month equivalent to the first day
-                                        the studentenrolled, e.g., if the
+                                        the student enrolled, e.g., if the
                                         student enrolls on the 15th of the
                                         current month, all payments are due
                                         onthe 15th of the subsequent months
@@ -143,7 +143,7 @@ const PaymentPolicy = () => {
                                     <li>
                                         DPO payments. With this method, we send
                                         you a payment link which you can use to
-                                        pay your ouststnading balance. This is
+                                        pay your outstanding balance. This is
                                         our preferred payment method.
                                     </li>
                                     <li>
