@@ -19,8 +19,8 @@ const performance_data = [
         delay: '100',
         count: 100,
         text: '%',
-        title: 'G7, G9 & IGCSE Pass Rate',
-        decimal: 1
+        title: 'G7, G9 & IGCSE Y9 Pass Rt.',
+        decimal: 0
     },
     {
         id: 2,
