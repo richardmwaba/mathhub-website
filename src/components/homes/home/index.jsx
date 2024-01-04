@@ -17,7 +17,7 @@ const index = () => {
                 <HeroArea/>
                 <CategoryArea/>
                 <AboutArea/>
-                <CoursesArea/>
+                <CoursesArea />
                 <VideoArea/>
                 <CounterArea/>
                 <Testimonial/>

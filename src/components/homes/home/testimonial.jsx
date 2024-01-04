@@ -63,7 +63,7 @@ const Testimonial = () => {
                                 <span className="shape-line"><i className="icon-19"></i></span>
                                 <p>{text}</p>
                                 <Link href="/about-us">
-                                    <a className="edu-btn btn-large">View All<i className="icon-4"></i></a>
+                                    <button className="edu-btn btn-large">View All<i className="icon-4"></i></button>
                                 </Link>
                             </div>
                         </div>

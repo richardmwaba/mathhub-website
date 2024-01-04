@@ -1,53 +1,67 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Counter from '../../common/counter';
 
-const counter_data = [
+const performance_data = [
     {
+        id: 0,
         color: 'primary-color',
         delay: '50',
-        count: 200,
-        text: '+',
-        title: 'Student Tutored',
+        count: 31,
+        sign: '+',
+        text: '%',
+        title: 'Students Tutored',
         decimal: 0
     },
     {
+        id: 1,
         color: 'secondary-color',
         delay: '100',
-        count: 99.9,
+        count: 100,
         text: '%',
-        title: 'Pass Rate',
+        title: 'G7, G9 & IGCSE Pass Rate',
         decimal: 1
     },
     {
+        id: 2,
         color: 'extra02-color',
         delay: '150',
-        count: 100,
-        text: '%',
-        title: 'Satisfaction Rate'
+        count: 1.49,
+        text: 'K',
+        title: 'Total Lessons',
+        decimal: 2
     },
     {
+        id: 3,
         color: 'extra05-color',
         delay: '200',
-        count: 100,
-        text: '%',
-        title: 'Top Instructors'
+        count: 1.98,
+        text: 'K',
+        title: 'Hours of Teaching',
+        decimal: 2
     }
 ]
 
-const CounterArea = ({home_3 = false,home_8=false}) => {
+const CounterArea = ({ home_3 = false, home_8 = false }) => {
+    const counterClass = home_8 ? 'counterup-area-3 gap-bottom-equal' : 'counterup-area-5 edu-section-gap'
     return (
-        <div className={`${home_3?'counterup-area-1 gap-lg-bottom-equal' : home_8 ? 'counterup-area-3 gap-bottom-equal':'counterup-area-5 edu-section-gap'}`}>
+        <div className={`${home_3 ? 'counterup-area-1 gap-lg-bottom-equal' : counterClass}`}>
             <div className="container">
+                <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <span className="pre-title">Performance Highlights</span>
+                    <h2 className="title">2023 Key Highlights</h2>
+                    <span className="shape-line"><i className="icon-19"></i></span>
+                </div>
                 <div className="row g-5">
-                    {counter_data.map((c, i) => (
-                        <div key={i} className="col-lg-3 col-sm-6" data-sal-delay={c.delay} data-sal="slide-up" data-sal-duration="800">
-                            <div className={`edu-counterup counterup-style-${home_3?'1':'5'} ${!home_3&&c.color}`}>
-                                <h2 className={`counter-item count-number ${home_3&&c.color}`}>
+                    {performance_data.map((performance) => (
+                        <div key={performance.id} className="col-lg-3 col-sm-6" data-sal-delay={performance.delay} data-sal="slide-up" data-sal-duration="800">
+                            <div className={`edu-counterup counterup-style-${home_3 ? '1' : '5'} ${!home_3 && performance.color}`}>
+                                <h2 className={`counter-item count-number ${home_3 && performance.color}`}>
                                     <span className="odometer">
-                                        <Counter number={parseFloat(c.count)} text={c.text} decimal={c.decimal} />
+                                    <Counter sign={performance.sign} number={parseFloat(performance.count)} text={performance.text} decimal={performance.decimal} />
                                     </span>
                                 </h2>
-                                <h6 className="title">{c.title}</h6>
+                                <h6 className="title">{performance.title}</h6>
                             </div>
                         </div>
                     ))}
@@ -55,6 +69,11 @@ const CounterArea = ({home_3 = false,home_8=false}) => {
             </div>
         </div>
     )
+}
+
+CounterArea.propTypes = {
+    home_3: PropTypes.boolean,
+    home_8: PropTypes.boolean
 }
 
 export default CounterArea;
