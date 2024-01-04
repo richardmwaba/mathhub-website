@@ -18,7 +18,7 @@ const HeroArea = () => {
                             </p>
                             <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
                                 <Link href="/all-courses-list">
-                                    <a className="edu-btn">Find subjects <i className="icon-4"></i></a>
+                                    <button className="edu-btn">Find subjects <i className="icon-4"></i></button>
                                 </Link>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ const HeroArea = () => {
                                 <img src="/assets/images/banner/lightbulb.jpg" alt="Light bulb" />
                             </div>
                             <div className="thumbnail thumbnail-2" data-sal-delay="500" data-sal="slide-down" data-sal-duration="1000">
-                                <img src="/assets/images/banner/graduation.jpg" alt="Graduation Image" />
+                                <img src="/assets/images/banner/graduation.jpg" />
                             </div>
                             <div className="online-support" data-sal-delay="600" data-sal="slide-right" data-sal-duration="1000">
                                 <div className="inner">
