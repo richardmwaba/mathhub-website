@@ -7,7 +7,6 @@ import CoursesArea from './courses-area';
 import FaqArea from './faq-area';
 import HeroArea from './hero-area';
 import Testimonial from './testimonial';
-import VideoArea from './video-area';
 
 const index = () => {
     return (
@@ -18,7 +17,6 @@ const index = () => {
                 <CategoryArea/>
                 <AboutArea/>
                 <CoursesArea />
-                <VideoArea/>
                 <CounterArea/>
                 <Testimonial/>
                 <FaqArea/>
