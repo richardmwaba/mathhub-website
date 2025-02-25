@@ -62,7 +62,7 @@ const Testimonial = () => {
                                 <h2 className="title">{title}</h2>
                                 <span className="shape-line"><i className="icon-19"></i></span>
                                 <p>{text}</p>
-                                <Link href="/about-us">
+                                <Link target="_blank" href="https://www.google.com/search?sca_esv=e74a10221791e7e3&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzSFOEV0nLq7v9jsDx4S4i8L2N8Cp-cN5oyu_5pF1y-F0Tbjf5yAnBrRMfjeBqpzgII33vY0_n0asVjzGN1xN2YD0ayyQ&q=Math+Hub+Reviews&sa=X&ved=2ahUKEwji6pDb4d2LAxWh38kDHfl7HLQQ0bkNegQIJhAE">
                                     <button className="edu-btn btn-large">View All<i className="icon-4"></i></button>
                                 </Link>
                             </div>

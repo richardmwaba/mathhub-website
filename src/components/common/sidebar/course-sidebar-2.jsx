@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import 'react-rangeslider/lib/index.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { add_category, add_force_page, add_item_offset, add_language, add_level, add_price, reset_filter }
   from '../../../redux/features/filter-slice';
