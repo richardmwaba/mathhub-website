@@ -7,7 +7,7 @@ const performance_data = [
         id: 0,
         color: 'primary-color',
         delay: '50',
-        count: 31,
+        count: 35,
         sign: '+',
         text: '%',
         title: 'Students Tutored',
@@ -19,25 +19,25 @@ const performance_data = [
         delay: '100',
         count: 100,
         text: '%',
-        title: 'G7, G9 & IGCSE Y9 Pass Rt.',
+        title: 'All Syllabi Pass Rate',
         decimal: 0
     },
     {
         id: 2,
         color: 'extra02-color',
         delay: '150',
-        count: 1.49,
-        text: 'K',
-        title: 'Total Lessons',
-        decimal: 2
+        count: 278,
+        text: '',
+        title: 'Hrs of Science Lessons',
+        decimal: 0
     },
     {
         id: 3,
         color: 'extra05-color',
         delay: '200',
-        count: 1.98,
+        count: 2.03,
         text: 'K',
-        title: 'Hours of Teaching',
+        title: 'Hours of Teaching Math',
         decimal: 2
     }
 ]
@@ -49,7 +49,7 @@ const CounterArea = ({ home_3 = false, home_8 = false }) => {
             <div className="container">
                 <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title">Performance Highlights</span>
-                    <h2 className="title">2023 Key Highlights</h2>
+                    <h2 className="title">2024 Key Highlights</h2>
                     <span className="shape-line"><i className="icon-19"></i></span>
                 </div>
                 <div className="row g-5">

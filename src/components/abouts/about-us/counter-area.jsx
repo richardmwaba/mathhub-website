@@ -4,19 +4,19 @@ import Counter from '../../common/counter';
 const counter_data = [
     {
         color: 'primary-color',
-        count: 200,
+        count: 250,
         icon: '48',
         text: '+',
-        title: 'Student Enrolled',
+        title: 'Students Enrolled',
         decimal: 0
     },
     {
         color: 'secondary-color',
-        count: 99.9,
+        count: 100,
         icon: '47',
         text: '%',
         title: 'Pass Rate',
-        decimal: 1
+        decimal: 0
     },
     {
         color: 'extra08-color',
