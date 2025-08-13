@@ -5,8 +5,8 @@ const footer_contents = {
     logoLight: '/assets/images/logo/mathhub-with-text.png',
     logoDark: '/assets/images/logo/mathhub-with-text.png',
     desc: 'Want to find out more? Please visit our location, email or call us using the details below.',
-    add: 'Plot No. 6056, Sibweni Rd, Northmead, Lusaka ZM',
-    call: '+260 978 403221',
+    add: 'Plot No. 3536, Main Street, Ibexhill, Lusaka ZM',
+    call: '+260 771 896665',
     email: 'info@hubformath.com',
     widgets: [
         {
@@ -55,7 +55,7 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
                                 <div className="widget-information">
                                     <ul className="information-list">
                                         <li><span>Add:</span>{add}</li>
-                                        <li><span>Call:</span><a href="tel:+260978403221">{call}</a></li>
+                                        <li><span>Call:</span><a href="tel:+260771896665">{call}</a></li>
                                         <li><span>Email:</span><a href="mailto:info@hubformath.com" rel="noreferrer" target="_blank">{email}</a></li>
                                     </ul>
                                 </div>

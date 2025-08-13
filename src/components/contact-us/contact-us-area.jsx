@@ -16,7 +16,7 @@ const ContactUsArea = () => {
                             <ul className="address-list">
                                 <li>
                                     <h5 className="title">Address</h5>
-                                    <p>Plot No. 6056, Sibweni Rd, Northmead, Lusaka ZM</p>
+                                    <p>Plot No. 3536, Main Street, Ibexhill, Lusaka ZM</p>
                                 </li>
                                 <li>
                                     <h5 className="title">Email</h5>
@@ -24,7 +24,7 @@ const ContactUsArea = () => {
                                 </li>
                                 <li>
                                     <h5 className="title">Phone</h5>
-                                    <p><a href="tel:+260978403221">+260 978 403221</a></p>
+                                    <p><a href="tel:+260978403221">+260 771 896665</a></p>
                                 </li>
                             </ul>
                             <ul className="social-share">
