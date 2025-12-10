@@ -1,3 +1,5 @@
+@use "variable";
+
 /*==============================
  *  Shortcode
 =================================*/
@@ -31,7 +33,7 @@
 .container-xxl,
 .container-custom,
 .container-custom-1520 {
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -152,22 +154,22 @@ Custom Row
     margin-right: -20px;
 
     // Responsive
-    @media #{$laptop-device} {
+    @media #{variable.$laptop-device} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
@@ -178,22 +180,22 @@ Custom Row
         padding-right: 20px;
 
         // Responsive
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -205,22 +207,22 @@ Custom Row
     margin-right: -25px;
 
     // Responsive
-    @media #{$laptop-device} {
+    @media #{variable.$laptop-device} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
@@ -231,22 +233,22 @@ Custom Row
         padding-right: 25px;
 
         // Responsive
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -259,22 +261,22 @@ Custom Row
     margin-right: -30px;
 
     // Responsive
-    @media #{$laptop-device} {
+    @media #{variable.$laptop-device} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
@@ -285,22 +287,22 @@ Custom Row
         padding-right: 30px;
 
         // Responsive
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -313,22 +315,22 @@ Custom Row
     margin-right: -35px;
 
     // Responsive
-    @media #{$laptop-device} {
+    @media #{variable.$laptop-device} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
@@ -339,22 +341,22 @@ Custom Row
         padding-right: 35px;
 
         // Responsive
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -366,22 +368,22 @@ Custom Row
     margin-right: -40px;
 
     // Responsive
-    @media #{$laptop-device} {
+    @media #{variable.$laptop-device} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
@@ -392,22 +394,22 @@ Custom Row
         padding-right: 40px;
 
         // Responsive
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -420,22 +422,22 @@ Custom Row
     margin-right: -45px;
 
     // Responsive
-    @media #{$laptop-device} {
+    @media #{variable.$laptop-device} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
@@ -446,22 +448,22 @@ Custom Row
         padding-right: 45px;
 
         // Responsive
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -474,22 +476,22 @@ Custom Row
     margin-right: -50px;
 
     // Responsive
-    @media #{$laptop-device} {
+    @media #{variable.$laptop-device} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
@@ -500,22 +502,22 @@ Custom Row
         padding-right: 50px;
 
         // Responsive
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -527,22 +529,22 @@ Custom Row
     margin-right: -60px;
 
     // Responsive
-    @media #{$laptop-device} {
+    @media #{variable.$laptop-device} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-left: -15px !important;
         margin-right: -15px !important;
     }
@@ -553,22 +555,22 @@ Custom Row
         padding-right: 60px;
 
         // Responsive
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }

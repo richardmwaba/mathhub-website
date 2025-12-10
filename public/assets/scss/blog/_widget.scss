@@ -1,3 +1,6 @@
+@use "../default/variable";
+@use "../default" as *;
+
 /*-------------------
   Blog Widget
 ---------------------*/
@@ -6,17 +9,17 @@
     box-shadow: 0px 10px 50px 0px rgba(26,46,85,0.07);
     border-radius: 5px;
     padding: 35px 0;
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-top: 70px;
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-top: 60px;
     }
 }
 
 .edu-blog-widget {
     padding: 35px 40px;
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 20px;
     }
     .widget-title {
@@ -57,7 +60,7 @@
             }
             .thumbnail {
                 margin-right: 20px;
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     margin-right: 10px;
                 }
                 a {
@@ -127,7 +130,7 @@
                 filter: opacity(.3);
                 -webkit-filter: opacity(.3);
             }
-            @media #{$smlg-device} {
+            @media #{variable.$smlg-device} {
                 padding: 40px 25px 60px;
             }
 

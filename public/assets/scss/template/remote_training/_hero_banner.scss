@@ -1,9 +1,11 @@
+@use "../../default/variable";
+
 .hero-style-11 {
     padding: 240px 0 160px;
-    @media #{$smlg-device} {
+    @media #{variable.$smlg-device} {
         padding: 200px 0 130px;
     }
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         padding: 150px 0 80px;
     }
     &.remote-training {
@@ -13,7 +15,7 @@
         justify-content: center;
         z-index: 1;
         margin-top: -110px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             min-height: 100%;
         }
     }
@@ -32,7 +34,7 @@
     .banner-content {
         p {
             padding-right: 20px;
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 padding-right: 0;
             }
         }

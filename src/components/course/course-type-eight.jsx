@@ -5,7 +5,7 @@ import { cart_course } from '../../redux/features/cart-slice';
 import { add_to_wishlist, wishlistItems } from '../../redux/features/wishlist-slice';
 
 const CourseTypeEight = ({ data, classes }) => {
-    const {cartCourses} = useSelector(state => state.cart);
+    const { cartCourses } = useSelector(state => state.cart);
     const dispatch = useDispatch();
     const wishlists = useSelector(wishlistItems);
     const isWishlistSelected = wishlists.find(w => Number(w.id) === Number(data.id));
@@ -15,46 +15,44 @@ const CourseTypeEight = ({ data, classes }) => {
             dispatch(
                 add_to_wishlist({
                     change_type: 'remove_wishlist', item: {
-                    id: course_item.id,
-                    img: `/assets/images/course/course-06/${course_item.img}`,
-                    title: course_item.title,
-                    price: course_item.course_price
-                }
-            }))
+                        id: course_item.id,
+                        img: `/assets/images/course/course-06/${course_item.img}`,
+                        title: course_item.title,
+                        price: course_item.course_price
+                    }
+                }))
         } else {
             dispatch(
                 add_to_wishlist({
                     change_type: 'add_wishlist', item: {
-                    id: course_item.id,
-                    img: `/assets/images/course/course-06/${course_item.img}`,
-                    title: course_item.title,
-                    price: course_item.course_price
-                }
-            }))
+                        id: course_item.id,
+                        img: `/assets/images/course/course-06/${course_item.img}`,
+                        title: course_item.title,
+                        price: course_item.course_price
+                    }
+                }))
         }
     }
 
     // handle add to cart
     const handleAddToCart = (course) => {
         dispatch(cart_course({
-            id:course.id,
-            img:`/assets/images/course/course-06/${course.img}`,
-            price:course.course_price,
-            title:course.title
+            id: course.id,
+            img: `/assets/images/course/course-06/${course.img}`,
+            price: course.course_price,
+            title: course.title
         }))
     }
 
     return (
-        <div className={`edu-course course-style-4 course-style-9 ${ classes ? classes : '' }`}>
+        <div className={`edu-course course-style-4 course-style-9 ${classes ? classes : ''}`}>
             <div className="inner">
                 <div className="thumbnail">
                     <Link href={`/course-details/${data.id}`}>
-                        <a>
-                            <img
-                                src={`/assets/images/course/course-06/${data.img}`}
-                                alt="Course Thumb"
-                            />
-                        </a>
+                        <img
+                            src={`/assets/images/course/course-06/${data.img}`}
+                            alt="Course Thumb"
+                        />
                     </Link>
                     <div className="time-top">
                         <span className="duration">
@@ -71,7 +69,7 @@ const CourseTypeEight = ({ data, classes }) => {
 
                     <h6 className="title">
                         <Link href={`/course-details/${data.id}`}>
-                            <a>{data.title}</a>
+                            {data.title}
                         </Link>
                     </h6>
 
@@ -110,7 +108,7 @@ const CourseTypeEight = ({ data, classes }) => {
 
                     <h5 className="title">
                         <Link href={`/course-details/${data.id}`}>
-                            <a>{data.title}</a>
+                            {data.title}
                         </Link>
                     </h5>
 
@@ -136,8 +134,8 @@ const CourseTypeEight = ({ data, classes }) => {
                     <div className="course-feature">
                         <h6 className="title">What You’ll Learn?</h6>
                         <ul>
-                            { 
-                                data.features.slice(0, 3).map( (feature, featurekey) => <li key={ featurekey }>{ feature }</li> )
+                            {
+                                data.features.slice(0, 3).map((feature, featurekey) => <li key={featurekey}>{feature}</li>)
                             }
                         </ul>
                     </div>
@@ -147,10 +145,10 @@ const CourseTypeEight = ({ data, classes }) => {
                             {
                                 cartCourses.some(
                                     (course) =>
-                                    course.id === data.id
+                                        course.id === data.id
                                 )
-                                ? "Added to cart"
-                                : "Add to cart"
+                                    ? "Added to cart"
+                                    : "Add to cart"
                             }
                         </a>
                         <button onClick={() => handleWishlist(data)} style={{ cursor: "pointer" }} className={`btn-outline-dark wishlist-btn ${isWishlistSelected ? 'active' : ''}`}><i className="icon-22"></i></button>

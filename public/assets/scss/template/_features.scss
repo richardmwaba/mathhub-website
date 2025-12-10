@@ -1,3 +1,5 @@
+@use "../default/variable";
+
 /*-------------------
   Features Styles
 ---------------------*/
@@ -163,17 +165,17 @@
         text-align: left;
         border-right: 1px solid rgba(255,255,255, .15);
         padding-left: 40px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             padding-left: 0;
             border-right: none;
         }
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             justify-content: center;
         } 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             justify-content: center;
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             justify-content: flex-start;
         }
 
@@ -212,16 +214,16 @@
         align-items: flex-start;
         padding: 50px 25px 42px;
         text-align: left;
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding: 40px 50px;
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding: 30px 25px;
         }
 
         &:first-child {
             padding-left: 50px;
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 padding-left: 25px;
             }
         }
@@ -293,7 +295,7 @@
             margin-bottom: 0;
             border-radius: 0;
             position: relative;
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 margin-right: 15px;
             }
             &:after {
@@ -324,13 +326,13 @@
 .features-grid-wrap {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         grid-template-columns: repeat(2, 1fr);
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         grid-template-columns: repeat(2, 1fr);
     }
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -356,13 +358,13 @@
 
 .features-area-4 {
     padding: 120px 0 90px;
-    @media #{$smlg-device} {
+    @media #{variable.$smlg-device} {
         padding: 100px 0 90px;
     }
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         padding: 60px 0 80px;
     } 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 60px 0;
     }
 }

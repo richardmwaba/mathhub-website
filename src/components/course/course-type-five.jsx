@@ -3,16 +3,14 @@ import React from 'react';
 
 const CourseTypeFive = ({ data, classes }) => {
     return (
-        <div className={`edu-course course-style-4 course-style-8 ${ classes ? classes : '' }`}>
+        <div className={`edu-course course-style-4 course-style-8 ${classes ? classes : ''}`}>
             <div className="inner">
                 <div className="thumbnail">
                     <Link href="#">
-                        <a>
-                            <img
-                                src={`/assets/images/course/course-06/${data.img}`}
-                                alt="Course Thumb"
-                            />
-                        </a>
+                        <img
+                            src={`/assets/images/course/course-06/${data.img}`}
+                            alt="Course Thumb"
+                        />
                     </Link>
                 </div>
 
@@ -20,7 +18,7 @@ const CourseTypeFive = ({ data, classes }) => {
 
                     <h6 className="title">
                         <Link href="#">
-                            <a>{data.title}</a>
+                            {data.title}
                         </Link>
                     </h6>
 

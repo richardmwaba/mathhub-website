@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*-------------------
   Shop Styles 
 ---------------------*/
@@ -135,7 +138,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 18px;
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         width: 110px;
         height: 50px;
     }
@@ -180,14 +183,14 @@
         border: none;
         border-bottom: 1px solid #e6e6e6 !important;
         &:last-child {
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 border-bottom: none;
             }
         }
     }
 
     thead {
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             display: none;
         }
 
@@ -208,7 +211,7 @@
     tbody {
 
         tr {
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 padding-left: 120px;
                 position: relative;
                 display: block;
@@ -220,7 +223,7 @@
                 }
             }
 
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 padding-left: 90px;
             }
         }
@@ -237,7 +240,7 @@
                 padding: 20px 10px;
             }
 
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 font-size: 16px;
                 display: block;
                 text-align: right;
@@ -258,7 +261,7 @@
             &.product-remove {
                 min-width: auto;
 
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -276,7 +279,7 @@
                     color: var(--color-black);
                     transition: var(--transition);
 
-                    @media #{$sm-layout} {
+                    @media #{variable.$sm-layout} {
                         font-size: 10px;
                     }
 
@@ -292,7 +295,7 @@
 
             &.product-thumbnail {
                 width: 110px;
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     width: 80px;
                     position: absolute;
                     left: 0;
@@ -304,7 +307,7 @@
                     border: 1px solid var(--color-border);
                     img {
                         height: 110px;
-                        @media #{$large-mobile} {
+                        @media #{variable.$large-mobile} {
                             height: 85px;
                         }
                     }
@@ -322,7 +325,7 @@
                 font-weight: var(--p-semi-bold);
                 font-family: var(--font-secondary);
 
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     width: 100%;
                     text-align: left;
                     padding-right: 40px;
@@ -363,7 +366,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         display: block;
     }
     .product-cupon {
@@ -393,7 +396,7 @@
     .update-btn {
         text-align: right;
 
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             text-align: left;
             margin-top: 20px;
         }
@@ -408,7 +411,7 @@
 
 .order-summery {
     margin-top: 100px;
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-top: 80px;
     }
     .title {
@@ -449,17 +452,17 @@
 
     &.checkout-summery {
         margin-top: 0;
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             margin-top: 80px;
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             margin-top: 60px;
         }
         .summery-table-wrap {
             border: 1px solid var(--color-border);
             border-radius: 5px;
             padding: 45px 50px 30px;
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 padding: 40px 20px 20px;
             }
             .title {
@@ -480,7 +483,7 @@
                     width: auto;
                     padding: 12px 0;
                     color: var(--color-heading);
-                    @media #{$large-mobile} {
+                    @media #{variable.$large-mobile} {
                         font-size: 14px;
                     }
                 }
@@ -508,10 +511,10 @@
 .account-page-area {
     .shape-group {
         @extend %liststyle;
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             display: none;
         } 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             display: none;
         }
         li {
@@ -539,7 +542,7 @@
     padding: 70px 50px;
     border-radius: 5px;
     background-color: var(--color-white);
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 40px 30px;
     }
     .title {
@@ -582,7 +585,7 @@
         align-items: center;
         justify-content: space-between;
         margin: 25px 0;
-        @media #{$small-mobile} {
+        @media #{variable.$small-mobile} {
             display: block;         
         }
         .edu-form-check {
@@ -611,7 +614,7 @@
         }
         .password-reset {
             font-size: 16px;
-           @media #{$small-mobile} {
+           @media #{variable.$small-mobile} {
                 padding-left: 30px;
                 margin-top: 5px;       
            }
@@ -638,7 +641,7 @@
         }
     }
     .input-group {
-        @media #{$small-mobile} {
+        @media #{variable.$small-mobile} {
             display: block;         
         }
         input {
@@ -649,7 +652,7 @@
         }
         .apply-btn {
             margin-left: 10px !important;
-            @media #{$small-mobile} {
+            @media #{variable.$small-mobile} {
                 margin-left: 0 !important; 
                 margin-top: 15px;   
             }
@@ -701,7 +704,7 @@
     border-radius: 5px;
     padding: 50px 50px 42px;
     margin-top: 50px;
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         padding: 40px 20px 30px;
     }
     .title {
@@ -711,7 +714,7 @@
         background-color: #f5f9fa;
         padding: 30px 30px 45px;
         margin-bottom: 30px;
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             padding: 30px 20px 30px;
         }
     }

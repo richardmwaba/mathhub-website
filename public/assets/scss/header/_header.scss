@@ -1,3 +1,5 @@
+@use "../default/variable";
+
 /*--------------------------
     Header Styles  
 --------------------------*/
@@ -7,11 +9,11 @@
         background-color: var(--color-white);
         box-shadow: 0 6px 15px 0 rgba(0, 0, 0, .05);
         position: relative;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-top: 12px;
             padding-bottom: 12px;
         }
@@ -29,12 +31,12 @@
     .header-navbar {
         display: flex;
         align-items: center;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
            justify-content: space-between;
         }
         .header-mainnav {
             flex: 1;
-            @media #{$smlg-device} {
+            @media #{variable.$smlg-device} {
                 display: none; 
             }
         }
@@ -53,7 +55,7 @@
         }
         .logo {
             margin-right: 40px;
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 margin-right: 15px;
             }
             a {
@@ -96,7 +98,7 @@
                 padding-left: 22px;
                 padding-right: 22px;     
             }
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 padding-left: 0;
                 padding-right: 0; 
             }
@@ -113,39 +115,39 @@
     .header-top {
         .header-top-left {
             .header-notify {
-                @media #{$lg-layout} {
+                @media #{variable.$lg-layout} {
                     font-size: 13px;
                 }
-                @media #{$md-layout} {
+                @media #{variable.$md-layout} {
                     text-align: center;
                     padding: 15px 0 5px;
                 }
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     text-align: center;
                     padding: 15px 0 5px;
                 }
             }
         }
         .header-info {
-            @media #{$lg-layout} {
+            @media #{variable.$lg-layout} {
                 margin: 0 -20px;
             }
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                margin: 0 -10px; 
             }
             li {
-                @media #{$lg-layout} {
+                @media #{variable.$lg-layout} {
                     padding: 14px 15px 12px;
                     font-size: 13px;
                 }
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                    padding: 10px; 
                 }
                 &:after {
-                    @media #{$md-layout} {
+                    @media #{variable.$md-layout} {
                         height: 50%;
                     }
-                    @media #{$sm-layout} {
+                    @media #{variable.$sm-layout} {
                         display: none;
                     }
                 }
@@ -194,7 +196,7 @@
             position: relative;
             padding-left: 50px;
             margin-left: 22px;
-            @media #{$small-mobile} {
+            @media #{variable.$small-mobile} {
                 padding-left: 20px;
                 margin-left: 0px;
             }
@@ -269,7 +271,7 @@
             position: relative;
             padding-left: 50px;
             margin-left: 22px;
-            @media #{$small-mobile} {
+            @media #{variable.$small-mobile} {
                 padding-left: 20px;
                 margin-left: 0px;
             }
@@ -412,7 +414,7 @@
         z-index: 3;
         padding-left: 120px;
         padding-right: 120px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             line-height: 90px;
         }
         @media only screen and (max-width: 1350px) {
@@ -472,7 +474,7 @@
           padding-left: 40px;
           padding-right: 40px;  
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-left: 15px;
             padding-right: 15px;
         } 

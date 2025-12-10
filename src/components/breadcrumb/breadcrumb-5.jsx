@@ -13,13 +13,13 @@ const CourseBreadcrumb = ({ course, subtitle }) => {
                     <ul className="edu-breadcrumb">
                         <li className="breadcrumb-item">
                             <Link href="/">
-                                <a>Home</a>
+                                Home
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
                         <li className="breadcrumb-item">
                             <Link href="/course-style-1">
-                                <a>Courses</a>
+                                Courses
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
@@ -32,14 +32,14 @@ const CourseBreadcrumb = ({ course, subtitle }) => {
                         <li><i className="icon-58"></i>by {instructor}</li>
                         <li><i className="icon-59"></i>{language}</li>
                         <li className="course-rating">
-                        <div className="rating">
-                            <i className="icon-23"></i>
-                            <i className="icon-23"></i>
-                            <i className="icon-23"></i>
-                            <i className="icon-23"></i>
-                            <i className="icon-23"></i>
-                        </div>
-                        <span className="rating-count">({rating_count} Rating)</span>
+                            <div className="rating">
+                                <i className="icon-23"></i>
+                                <i className="icon-23"></i>
+                                <i className="icon-23"></i>
+                                <i className="icon-23"></i>
+                                <i className="icon-23"></i>
+                            </div>
+                            <span className="rating-count">({rating_count} Rating)</span>
                         </li>
                     </ul>
                 </div>
@@ -49,18 +49,18 @@ const CourseBreadcrumb = ({ course, subtitle }) => {
                     <span></span>
                 </li>
                 <motion.li className="shape-2 scene"
-                    animate={ {
+                    animate={{
                         x: mouseReverse(40).x,
                         y: mouseReverse(40).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/about/shape-13.png" alt="shape" />
                 </motion.li>
                 <motion.li className="shape-3 scene"
-                    animate={ {
+                    animate={{
                         x: mouseDirection(40).x,
                         y: mouseDirection(40).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/about/shape-15.png" alt="shape" />
                 </motion.li>
@@ -68,10 +68,10 @@ const CourseBreadcrumb = ({ course, subtitle }) => {
                     <span></span>
                 </li>
                 <motion.li className="shape-5 scene"
-                    animate={ {
+                    animate={{
                         x: mouseReverse(40).x,
                         y: mouseReverse(40).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/about/shape-07.png" alt="shape" />
                 </motion.li>

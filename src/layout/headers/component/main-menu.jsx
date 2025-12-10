@@ -6,32 +6,32 @@ const MainMenu = () => {
     return (
         <ul className="mainmenu">
             {menu_data.map((menuItem) => (
-                <>
+                <React.Fragment key={menuItem.title}>
                     {!menuItem.submenus ? (
                         <li>
                             <a href={menuItem.link}>{menuItem.title}</a>
                         </li>
                     ) : (
-                        <li key={menuItem.title} className="has-droupdown">
+                        <li className="has-droupdown">
                             <a href={menuItem.link}>{menuItem.title}</a>
                             {!menuItem.mega_menu && (
                                 <ul className="submenu">
                                     {menuItem.submenus.map((nav, i) => (
                                         <li key={i}>
                                             <Link href={`${nav.link}`}>
-                                                <a>
-                                                    {nav.title}
-                                                    {nav?.hot && (
-                                                        <span className="badge-1">
-                                                            hot
-                                                        </span>
-                                                    )}
-                                                    {nav?.new && (
-                                                        <span className="badge">
-                                                            new
-                                                        </span>
-                                                    )}
-                                                </a>
+
+                                                {nav.title}
+                                                {nav?.hot && (
+                                                    <span className="badge-1">
+                                                        hot
+                                                    </span>
+                                                )}
+                                                {nav?.new && (
+                                                    <span className="badge">
+                                                        new
+                                                    </span>
+                                                )}
+
                                             </Link>
                                         </li>
                                     ))}
@@ -51,7 +51,7 @@ const MainMenu = () => {
                                                             <Link
                                                                 href={`${m.link}`}
                                                             >
-                                                                <a>{m.title}</a>
+                                                                {m.title}
                                                             </Link>
                                                         </li>
                                                     )
@@ -63,7 +63,7 @@ const MainMenu = () => {
                             )}
                         </li>
                     )}
-                </>
+                </React.Fragment>
             ))}
         </ul>
     );

@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*-------------------
   Video Styles
 ---------------------*/
@@ -26,7 +29,7 @@
             font-size: 24px;
             text-align: center;
             color: var(--color-white);
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 width: 60px;
                 height: 60px;
                 line-height: 62px;
@@ -92,7 +95,7 @@
                 top: -100px;
                 right: 15px;
                 z-index: 1;
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                    display: none; 
                 }
             } 
@@ -125,10 +128,10 @@
     position: relative;
     z-index: 1;
     padding: 210px 0;
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         padding: 150px 0 200px;
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 120px 0 150px;
     }
     &:before {
@@ -149,7 +152,7 @@
     text-align: center;
     .video-btn {
         margin-bottom: 100px;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             margin-bottom: 70px;
         }
     }
@@ -244,7 +247,7 @@
 .video-area-4 {
     .video-gallery {
         margin-bottom: -275px;
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             margin-bottom: 0px;
         }
     }
@@ -269,7 +272,7 @@
         .title {
             margin-bottom: 0;
             width: 60%;
-            @media #{$smlg-device} {
+            @media #{variable.$smlg-device} {
                 width: 100%;
             }
         }

@@ -1,3 +1,5 @@
+@use "../default/variable";
+
 /*-------------------
  * Button
 ---------------------*/
@@ -59,7 +61,7 @@ button {
         overflow: hidden;
         position: relative;
         z-index: 1;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding: 0 20px;
             font-size: 14px;
             height: 50px;
@@ -82,7 +84,7 @@ button {
             padding-left: 6px;
             position: relative;
             font-size: 11px;
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 font-size: 9px;
             }
         }

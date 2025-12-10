@@ -1,3 +1,5 @@
+@use "../default/variable";
+
 /*-----------------------------
     Blog Comments Style  
 ------------------------------*/
@@ -16,7 +18,7 @@
             max-height: 80px;
             border-radius: 50%;
             margin-right: 30px;
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 margin-right: 20px;
                 min-width: 60px;
                 width: 60px;
@@ -52,7 +54,7 @@
         }
         &.comment-reply {
             margin-left: 110px;
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 margin-left: 40px;
             }
         }
