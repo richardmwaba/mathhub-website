@@ -1,3 +1,5 @@
+@use "../../default/variable";
+
 .edu-cta-banner-area-6 {
     background: var(--gradient-primary);
     width: 100%;
@@ -8,17 +10,17 @@
             height: 567px;
             margin-top: -67px;
             margin-left: 60px;
-            @media #{$lg-layout} {
+            @media #{variable.$lg-layout} {
                 margin-top: -30px;
             }
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 display: none;
             }
         }
     }
     .section-title {
         padding: 120px 0;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             text-align: center;
             padding: 70px 0;
 

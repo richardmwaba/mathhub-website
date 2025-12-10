@@ -1,12 +1,15 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*-------------------
   Privacy Policy Style
 ---------------------*/
 .privacy-policy-area {
     padding: 120px 0 100px;
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         padding: 100px 0; 
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 80px 0; 
     }
 }
@@ -20,7 +23,7 @@
     }
     .text-block {
         margin-bottom: 60px;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             margin-bottom: 50px;
         }
         &:last-child {

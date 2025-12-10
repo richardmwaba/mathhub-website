@@ -1,3 +1,5 @@
+@use "../../default/variable";
+
 .faq-style-7 {
     overflow: hidden;
     padding-top: 350px;
@@ -21,28 +23,28 @@
     }
     .edu-faq-content {
         padding-bottom: 120px;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             padding-bottom: 60px;
         }
     }
     .edu-faq-gallery {
         bottom: 0;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             left: 0;
             bottom: -8px;
         }
         .thumbnail-1 {
             margin-left: -277px;
-            @media #{$custom-lg-device-two} {
+            @media #{variable.$custom-lg-device-two} {
                 margin-left: -140px;
             }
-            @media #{$custom-laptop-device} {
+            @media #{variable.$custom-laptop-device} {
                 margin-left: -60px;
             }
-            @media #{$smlg-device} {
+            @media #{variable.$smlg-device} {
                 margin-left: -70px;
             }
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 margin-left: 0;
             }
             img {
@@ -51,11 +53,11 @@
                 max-width: 100%;
                 position: relative;
                 z-index: 9;
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     min-height: 100%;
                 }
             }
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 text-align: center;
             }
         }
@@ -86,7 +88,7 @@
     }
     .row--45 > [class*="col"], 
     .row--45 > [class*="col-"] {
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 40px;
             padding-right: 40px; 
         }   

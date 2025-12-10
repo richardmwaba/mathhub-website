@@ -41,9 +41,7 @@ const FooterThree = () => {
                             <div className="edu-footer-widget">
                                 <div className="logo">
                                     <Link href="/">
-                                        <a>
-                                            <img className="logo-dark" src="/assets/images/logo/logo-white.png" alt="Corporate Logo" />
-                                        </a>
+                                        <img className="logo-dark" src="/assets/images/logo/logo-white.png" alt="Corporate Logo" />
                                     </Link>
                                 </div>
                                 <p className="description">Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore magna aliqua enim.</p>
@@ -56,9 +54,9 @@ const FooterThree = () => {
                                     <h4 className="widget-title">{w.widget_title}</h4>
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
-                                            {w.footer_links.map((l, i) => 
+                                            {w.footer_links.map((l, i) =>
                                                 <li key={i}>
-                                                    <Link href={`/${l.link}`}><a>{l.title}</a></Link>
+                                                    <Link href={`/${l.link}`}>{l.title}</Link>
                                                 </li>
                                             )}
                                         </ul>
@@ -69,7 +67,7 @@ const FooterThree = () => {
 
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="edu-footer-widget">
-                            <h6 className="widget-title">Contacts</h6>
+                                <h6 className="widget-title">Contacts</h6>
                                 <div className="inner">
                                     <p className="description">Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor dolore.</p>
                                     <div className="widget-information">
@@ -96,7 +94,7 @@ const FooterThree = () => {
                         <div className="col-lg-12">
                             <div className="inner text-center">
                                 <p>
-                                    Copyright {new Date().toDateString()} 
+                                    Copyright {new Date().toDateString()}
                                     <a href="https://1.envato.market/AoJezj" rel="noreferrer" target="_blank">EduBlink</a> Designed By <a href="https://1.envato.market/YgGJbj" target="_blank" rel="noreferrer">DevsBlink</a>. All Rights Reserved
                                 </p>
                             </div>

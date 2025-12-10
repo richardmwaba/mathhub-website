@@ -1,3 +1,5 @@
+@use "../default/variable";
+
 /*-------------------
   Counterup Styles
 ---------------------*/
@@ -5,11 +7,11 @@
     border-radius: 10px;
     text-align: center;
     padding: 38px 30px;
-    @media #{$small-mobile} {
+    @media #{variable.$small-mobile} {
        padding: 25px;
     }
     .odometer.odometer-auto-theme .odometer-digit .odometer-value {
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             line-height: 1.2;
         }
     }
@@ -60,7 +62,7 @@
             top: 50%;
             right: -15px;
             transform: translateY(-50%);
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 display: none;
             }
         }
@@ -68,13 +70,13 @@
         &.border-none {
             &:after {
                 display: none;
-                @media #{$md-layout} {
+                @media #{variable.$md-layout} {
                     display: block;
                 }
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     display: block;
                 }
-                @media #{$large-mobile} {
+                @media #{variable.$large-mobile} {
                     display: none;
                 }
             }
@@ -195,44 +197,44 @@
         border-radius: 10px;
         padding: 70px;
         position: relative;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding: 40px;
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             padding: 10px;
         }
         .counterup-box {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             position: relative;
-            @media #{$small-mobile} {
+            @media #{variable.$small-mobile} {
                 grid-template-columns: repeat(1, 1fr);
             }
             .edu-counterup {
                 border-radius: 0;
                 &:first-child {
                     border-right: .8px solid var(--color-border);
-                    @media #{$small-mobile} {
+                    @media #{variable.$small-mobile} {
                         border-right: none;
                     }
                 }
                 &:nth-child(3) {
                     border-right: .8px solid var(--color-border);
-                    @media #{$small-mobile} {
+                    @media #{variable.$small-mobile} {
                         border-right: none;
                     }
                 }
             }
             &.counterup-box-1 {
                 border-bottom: .8px solid var(--color-border);
-                @media #{$small-mobile} {
+                @media #{variable.$small-mobile} {
                     border-bottom: none;
                 }
             }
         }
 
         .shape-group {
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 display: none;
             }
             li {
@@ -270,7 +272,7 @@
         .edu-counterup {
             &.counterup-style-3 {
                 &:after {
-                    @media #{$md-layout-1} {
+                    @media #{variable.$md-layout-1} {
                         width: 0px;
                     }
                 }
@@ -290,7 +292,7 @@
     :nth-child(2) {
         .counterup-style-6{
             &:after {
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     width: 0px;
                 }
             }
@@ -312,37 +314,37 @@
         border-radius: 10px;
         padding: 70px;
         position: relative;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding: 40px;
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             padding: 10px;
         }
         .counterup-box {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             position: relative;
-            @media #{$small-mobile} {
+            @media #{variable.$small-mobile} {
                 grid-template-columns: repeat(1, 1fr);
             }
             .edu-counterup {
                 border-radius: 0;
                 &:first-child {
                     border-right: .8px solid var(--color-border);
-                    @media #{$small-mobile} {
+                    @media #{variable.$small-mobile} {
                         border-right: none;
                     }
                 }
                 &:nth-child(3) {
                     border-right: .8px solid var(--color-border);
-                    @media #{$small-mobile} {
+                    @media #{variable.$small-mobile} {
                         border-right: none;
                     }
                 }
             }
             &.counterup-box-1 {
                 border-bottom: .8px solid var(--color-border);
-                @media #{$small-mobile} {
+                @media #{variable.$small-mobile} {
                     border-bottom: none;
                 }
             }
@@ -353,7 +355,7 @@
                 position: absolute;
                 z-index: -1;
                 img {
-                    @media #{$sm-layout} {
+                    @media #{variable.$sm-layout} {
                         transform: scale(.5);
                         animation: none;
                     }
@@ -416,7 +418,7 @@
     padding: 65px 0;
     .counterup-style-6{
         display: flex;
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             display: block;
         }
         &:after {
@@ -428,19 +430,19 @@
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.149);
             line-height: 104px;
-            @media #{$lg-layout} {
+            @media #{variable.$lg-layout} {
                width: 80px;
                height: 80px;
                line-height: 82px; 
                font-size: 45px;
             }
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 text-align: center;
                 display: inline-block;
             }
             &.icon-flower {
                 font-size: 47px;
-                @media #{$lg-layout} {
+                @media #{variable.$lg-layout} {
                     font-size: 40px;
                  }
             }
@@ -451,15 +453,15 @@
             text-align: left;
             .count-number {
                 text-align: left;
-                @media #{$lg-layout} {
+                @media #{variable.$lg-layout} {
                     font-size: 30px;
                 }
-                @media #{$large-mobile} {
+                @media #{variable.$large-mobile} {
                     text-align: center;
                 }
             }
             .title {
-                @media #{$large-mobile} {
+                @media #{variable.$large-mobile} {
                     text-align: center;
                 }
             }

@@ -1,33 +1,35 @@
+@use "../../default/variable";
+
 // Modern Schooling Banner Styles
 .hero-banner {
     &.hero-style-8 {
         min-height: 790px;
         position: relative;
 
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding-top: 95px;
         }
 
         .banner-content {
             z-index: 12;
 
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 text-align: center;
                 padding-bottom: 50px;
             }
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 padding-top: 50px;
             }
 
             p {
                 padding-right: 90px;
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     padding-right: 0;
                 }
             }
             .banner-search {
                 width: 92%;
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     width: 100%;
                 }
                 .input-group {
@@ -63,15 +65,15 @@
         .banner-thumbnail {
             margin-right: -100px;
             margin-top: -60px;
-            @media #{$custom-lg-device-eight} {
+            @media #{variable.$custom-lg-device-eight} {
                 margin-right: -40px;
             }
-            @media #{$smlg-device} {
+            @media #{variable.$smlg-device} {
                 margin-right: 0;
             }
 
             .thumbnail {
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     padding-bottom: 100px;
                 }
             }
@@ -79,7 +81,7 @@
             .instructor-info {
                 bottom: -60px;
                 left: 35px;
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     left: 0;
                     bottom: 90px;
                 }
@@ -100,7 +102,7 @@
                         left: inherit;
                         right: -100px;
                         bottom: 9px;
-                        @media #{$custom-lg-device-six} {
+                        @media #{variable.$custom-lg-device-six} {
                             right: -40px;
                         }
                     }

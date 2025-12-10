@@ -6,7 +6,7 @@ import { remove_wishlist_product } from '../../redux/features/wishlist-slice';
 
 const SingleWishlist = ({ item }) => {
     const dispatch = useDispatch();
-    const {cartCourses} = useSelector(state => state.cart);
+    const { cartCourses } = useSelector(state => state.cart);
     // handle add to cart
     const handleAddToCart = (course) => {
         dispatch(cart_course(course))
@@ -16,20 +16,18 @@ const SingleWishlist = ({ item }) => {
         <tr>
             <td className="product-remove">
                 <a style={{ cursor: 'pointer' }} onClick={() => dispatch(remove_wishlist_product(item))}
-                className="remove-wishlist">
+                    className="remove-wishlist">
                     <i className="icon-73"></i>
                 </a>
             </td>
             <td className="product-thumbnail">
                 <Link href={`/course-details/${item.id}`}>
-                <a>
                     <img src={item.img} alt="Books" />
-                </a>
                 </Link>
             </td>
             <td className="product-title">
                 <Link href={`/course-details/${item.id}`}>
-                    <a>{item.title}</a>
+                    {item.title}
                 </Link>
             </td>
             <td className="product-price" data-title="Price">

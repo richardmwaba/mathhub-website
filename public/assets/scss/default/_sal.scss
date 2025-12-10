@@ -1,3 +1,4 @@
+@use "sass:map";
 /*-------------------------
     Sal Styels
 -------------------------*/
@@ -64,7 +65,7 @@ $sal-easings: (linear: linear,
     transition-delay: $sal-animation-delay;
     transition-duration: var(--sal-duration, $sal-animation-duration);
     transition-delay: var(--sal-delay, $sal-animation-delay);
-    transition-timing-function: var(--sal-easing, map-get($sal-easings, 'ease'));
+    transition-timing-function: var(--sal-easing, map.get($sal-easings, 'ease'));
 }
 
 @for $i from 4 through 40 {

@@ -1,3 +1,5 @@
+@use "../default/variable";
+
 /*-------------------
   Why Choose Styles
 ---------------------*/
@@ -71,13 +73,13 @@
         }
         &.thumbnail-1 {
             text-align: right;
-            @media #{$md-layout} {
+            @media #{variable.$md-layout} {
                 margin-right: 80px;
             }
         }
         &.thumbnail-2 {
             margin-top: -230px;
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 transform: none !important;
             }
             img {
@@ -286,7 +288,7 @@
             &.shape-1 {
                 top: -180px;
                 left: 75px;
-                @media #{$lg-layout-1} {
+                @media #{variable.$lg-layout-1} {
                     left: -100px;
                 }
                 span {
@@ -300,10 +302,10 @@
             &.shape-2 {
                 top: 195px;
                 left: 120px;
-                @media #{$lg-layout-1} {
+                @media #{variable.$lg-layout-1} {
                     left: 60px;
                 }
-                @media #{$custom-lg-device-eight} {
+                @media #{variable.$custom-lg-device-eight} {
                     left: -60px;
                     top: 150px;
                 }
@@ -329,7 +331,7 @@
             &.shape-1 {
                 top: -25px;
                 left: -205px;
-                @media #{$custom-lg-device-eight} {
+                @media #{variable.$custom-lg-device-eight} {
                     top: -35px;
                     left: -165px;
                 }

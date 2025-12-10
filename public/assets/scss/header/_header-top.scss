@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*--------------------------
     Header Top Styles  
 --------------------------*/
@@ -12,18 +15,18 @@
 .header-top {
     display: flex;
     align-items: center;
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         display: block; 
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         display: block; 
     }
     .header-top-left {
         margin-right: 30px;
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             margin-right: 0;
         } 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             margin-right: 0;
         }
     }
@@ -52,10 +55,10 @@
         justify-content: flex-end;
         flex-wrap: wrap;
         margin: 0 -30px;
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             justify-content: center;
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             justify-content: center;
             margin: 0 -15px;
         }
@@ -67,7 +70,7 @@
             color: var(--color-white);
             padding: 14px 30px 12px;
             position: relative;
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 padding: 15px; 
             }
             &:after {

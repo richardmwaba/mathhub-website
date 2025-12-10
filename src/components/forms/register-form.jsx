@@ -45,13 +45,13 @@ const RegisterForm = () => {
                     <input value={values.terms} onChange={handleChange} onBlur={handleBlur} type="checkbox" name='terms' id="terms-condition" />
                     <label htmlFor="terms-condition">I agree the User Agreement and
                         <Link href="/terms-condition">
-                            <a>Terms & Condition.</a>
+                            Terms & Condition.
                         </Link>
                     </label>
                 </div>
             </div>
             {touched.terms && <ErrorMsg error={errors.terms?.split('true,')[1]} />}
-            
+
             <div className="form-group">
                 <button type="submit" className="edu-btn btn-medium">Create Account <i className="icon-4"></i></button>
             </div>

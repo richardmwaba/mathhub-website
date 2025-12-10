@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*-------------------------
    Footer Styles
 -------------------------*/
@@ -20,14 +23,14 @@
             background-image: url(../../images/bg/BG-3.webp);
             background-repeat: no-repeat;
             
-            @media #{$md-layout-1} {  
+            @media #{variable.$md-layout-1} {  
                 display: none;
             }
         }
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             padding: 80px 0;
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding: 60px 0;
         }
     }
@@ -175,10 +178,10 @@
         }
         .inner {
             margin-top: 36px;
-            @media #{$md-layout} {
+            @media #{variable.$md-layout} {
                 margin-top: 20px;
             }
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 margin-top: 20px;
             }
         }
@@ -221,32 +224,32 @@
         }
         &.explore-widget {
             margin-left: 65px;
-            @media #{$lg-layout} {
+            @media #{variable.$lg-layout} {
                 margin-left: 0;
             }
 
-            @media #{$md-layout} {
+            @media #{variable.$md-layout} {
                 margin-left: 0;
             }
 
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 margin-left: 0;
             }
         }
         .input-group {
             &.footer-subscription-form {
-                @media #{$small-mobile} {
+                @media #{variable.$small-mobile} {
                     flex-direction: column;
                 }
                 .form-control {
-                    @media #{$small-mobile} {
+                    @media #{variable.$small-mobile} {
                         width: 100%;
                         height: 50px;
                         margin-bottom: 20px;
                     }
                 }
                 button {
-                    @media #{$small-mobile} {
+                    @media #{variable.$small-mobile} {
                         margin-left: 0px !important;
                     }
                 }
@@ -356,20 +359,20 @@
                 &.shape-1 {
                     top: 45px;
                     left: 6%;
-                    @media #{$lg-layout-1, $custom-lg-device-two} {
+                    @media #{variable.$lg-layout-1, variable.$custom-lg-device-two} {
                         left: 0;
                     }
-                    @media #{$custom-lg-device-eight} {
+                    @media #{variable.$custom-lg-device-eight} {
                         left: -80px;
                     }
                 } 
                 &.shape-2 {
                     bottom: 30px;
                     left: 40px;
-                    @media #{$lg-layout-1} {
+                    @media #{variable.$lg-layout-1} {
                         left: 0;
                     }
-                    @media #{$custom-lg-device-eight} {
+                    @media #{variable.$custom-lg-device-eight} {
                         left: -80px;
                     }
                 }
@@ -380,20 +383,20 @@
                 &.shape-4 {
                     bottom: -10px;
                     right: 40px;
-                    @media #{$lg-layout-1} {
+                    @media #{variable.$lg-layout-1} {
                         right: 0;
                     }
-                    @media #{$custom-lg-device-eight} {
+                    @media #{variable.$custom-lg-device-eight} {
                         right: -50px;
                     }
                 }
                 &.shape-5 {
                     top: 50px;
                     right: 6%;
-                    @media #{$lg-layout-1} {
+                    @media #{variable.$lg-layout-1} {
                         right: 0;
                     }
-                    @media #{$custom-lg-device-eight} {
+                    @media #{variable.$custom-lg-device-eight} {
                         right: -50px;
                     }
                 }
@@ -414,14 +417,14 @@
                 &.shape-1 {
                     top: 45px;
                     left: 6%;
-                    @media #{$lg-layout-1, $custom-lg-device-two} {
+                    @media #{variable.$lg-layout-1, variable.$custom-lg-device-two} {
                         left: 0;
                     }
                 } 
                 &.shape-2 {
                     bottom: 30px;
                     left: 40px;
-                    @media #{$lg-layout-1} {
+                    @media #{variable.$lg-layout-1} {
                         left: 0;
                     }
                     img {
@@ -438,7 +441,7 @@
                 &.shape-4 {
                     bottom: -10px;
                     right: 40px;
-                    @media #{$lg-layout-1} {
+                    @media #{variable.$lg-layout-1} {
                         right: 0;
                     }
                     img {
@@ -448,7 +451,7 @@
                 &.shape-5 {
                     top: 50px;
                     right: 6%;
-                    @media #{$lg-layout-1} {
+                    @media #{variable.$lg-layout-1} {
                         right: 0;
                     }
                 }

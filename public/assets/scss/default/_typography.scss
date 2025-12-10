@@ -1,3 +1,5 @@
+@use "variable";
+
 /*-------------------------
     Typography
 -------------------------*/
@@ -130,13 +132,13 @@ a {
     color: var(--color-heading);
     transition: 0.3s;
 }
-@media #{$smlg-device} {
+@media #{variable.$smlg-device} {
     h1,
     .h1 {
         font-size: 44px;
     }
 }
-@media #{$md-layout} {
+@media #{variable.$md-layout} {
     h1,
     .h1 {
         font-size: 38px;
@@ -159,7 +161,7 @@ a {
 }
 
 
-@media #{$sm-layout} {
+@media #{variable.$sm-layout} {
     h1,
     .h1 {
         font-size: 34px;
@@ -206,7 +208,7 @@ p {
     color: var(--color-body);
     margin: 0 0 30px;
 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin: 0 0 20px;
     }
 
@@ -279,7 +281,7 @@ ul {
                 position: relative;
                 padding-left: 30px;
 
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     padding-left: 19px;
                 }
 

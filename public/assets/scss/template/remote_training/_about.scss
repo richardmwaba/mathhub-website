@@ -1,3 +1,5 @@
+@use "../../default/variable";
+
 .about-counterup {
     overflow: hidden;
     position: relative;
@@ -78,7 +80,7 @@
             } 
             &.remote-course {
                 margin-left: 50px;
-               @media #{$smlg-device} {
+               @media #{variable.$smlg-device} {
                     margin-left: 0;
                 }
             }     
@@ -122,10 +124,10 @@
         .about-content {
             padding-left: 30px;
             padding-right: 0;
-            @media #{$lg-layout} {
+            @media #{variable.$lg-layout} {
                 padding-left: 60px;
             }
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 padding-left: 0;
             }
         }

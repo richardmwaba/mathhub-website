@@ -1,3 +1,5 @@
+@use "variable";
+
 /*-------------------------
   Dark Mode CSS Starts Here
 ---------------------------*/
@@ -719,7 +721,7 @@
     .brand-area-5 {
         &::before {
             background-image: url(../../images/bg/dark-bg-image-20.svg);
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 background: var(--dark-bg-color);
             }
         }
@@ -1017,20 +1019,20 @@
                     border-radius: 0;
                     &:first-child {
                         border-right: .8px solid var(--dark-color-border);
-                        @media #{$small-mobile} {
+                        @media #{variable.$small-mobile} {
                             border-right: none;
                         }
                     }
                     &:nth-child(3) {
                         border-right: .8px solid var(--dark-color-border);
-                        @media #{$small-mobile} {
+                        @media #{variable.$small-mobile} {
                             border-right: none;
                         }
                     }
                 }
                 &.counterup-box-1 {
                     border-bottom: .8px solid var(--dark-color-border);
-                    @media #{$small-mobile} {
+                    @media #{variable.$small-mobile} {
                         border-bottom: none;
                     }
                 }
@@ -1479,7 +1481,7 @@
         .campus-content {
             background-color: var(--bg-color-2);
             box-shadow: none;
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 background-color: transparent;
             }
             .shape-5 {
@@ -2263,7 +2265,7 @@
             .scroll-down-btn {
                 bottom: -100px;
 
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     bottom: -10px;
                 }
                 .scroll-btn {

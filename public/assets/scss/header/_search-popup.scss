@@ -1,3 +1,5 @@
+@use "../default/variable";
+
 /*----------------------
     Search Popup  
 -----------------------*/
@@ -26,7 +28,7 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             min-height: 450px;
         }
     }
@@ -44,7 +46,7 @@
                 display: inline-block;
             }
         }
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             top: 40px;
             left: 20px;
         }
@@ -53,7 +55,7 @@
         position: absolute;
         right: 62px;
         top: 62px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             top: 50px;
             right: 15px;
         }
@@ -86,7 +88,7 @@
                 font-weight: 400;
                 font-family: var(--font-secondary);
                 font-size: 24px;
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     font-size: 16px;
                     height: 60px;
                 }
@@ -107,7 +109,7 @@
                 &:hover {
                     color: var(--color-primary);
                 }
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     font-size: 20px;
                 }
             }

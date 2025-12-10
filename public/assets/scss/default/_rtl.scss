@@ -1,10 +1,12 @@
+@use "variable";
+
 html[dir="rtl"]{
     .header-top {
        .header-top-right {
             .header-info {
                 li {
                     padding: 14px 35px 12px 30px;
-                    @media #{$lg-layout} {
+                    @media #{variable.$lg-layout} {
                         padding: 14px 30px 12px;
                         font-size: 11px;
                     }
@@ -37,7 +39,7 @@ html[dir="rtl"]{
        } 
        .header-top-left {
             .header-notify {
-                @media #{$lg-layout} {
+                @media #{variable.$lg-layout} {
                     font-size: 11px;
                 }
             }
@@ -88,7 +90,7 @@ html[dir="rtl"]{
         .header-brand {
             .logo {
                 margin-right: 27px;
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     margin-right: 0;
                 }
             }
@@ -297,7 +299,7 @@ html[dir="rtl"]{
                         padding-left: inherit;
                         padding-right: 30px;
 
-                        @media #{$md-layout} {
+                        @media #{variable.$md-layout} {
                             text-align: right;
                         }
                     }
@@ -434,14 +436,14 @@ html[dir="rtl"]{
         &.hero-style-8 {
             .banner-content {
                 text-align: right;
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     text-align: center;
                 }
                 .title {
-                    @media #{$md-layout-1} {
+                    @media #{variable.$md-layout-1} {
                         padding: 0 110px;
                     }
-                    @media #{$large-mobile} {
+                    @media #{variable.$large-mobile} {
                         padding: 0 60px;
                     }
                 }
@@ -449,7 +451,7 @@ html[dir="rtl"]{
                 p {
                    padding-right: inherit;
                    padding-left: 90px; 
-                   @media #{$md-layout-1} {
+                   @media #{variable.$md-layout-1} {
                     padding-left: 0;
                 }
                 }
@@ -476,10 +478,10 @@ html[dir="rtl"]{
             .banner-thumbnail {
                 margin-right: inherit;
                 margin-left: -100px;
-                @media #{$custom-lg-device-eight} {
+                @media #{variable.$custom-lg-device-eight} {
                     margin-left: -40px;
                 }
-                @media #{$smlg-device} {
+                @media #{variable.$smlg-device} {
                     margin-left: 0;
                 }
                 .instructor-info {
@@ -497,7 +499,7 @@ html[dir="rtl"]{
                         &.shape-3 {
                             right: inherit;
                             left: -100px;
-                            @media #{$custom-lg-device-six} {
+                            @media #{variable.$custom-lg-device-six} {
                                 left: -40px;
                             }
                         }
@@ -540,7 +542,7 @@ html[dir="rtl"]{
     .hero-style-9 .shape-group li.shape-4 {
         left: inherit;
         right: 100px;
-        @media #{$custom-lg-device-six} {
+        @media #{variable.$custom-lg-device-six} {
             right: 2px;
         }
     }
@@ -555,7 +557,7 @@ html[dir="rtl"]{
     .hero-style-10 .banner-content p {
         padding-right: inherit;
         padding-left: 85px;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             padding-left: 0;
         }
     }
@@ -576,14 +578,14 @@ html[dir="rtl"]{
         margin-right: 0;
         margin-bottom: -170px;
         margin-left: -190px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
            margin-left: -100px; 
         }
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             margin-left: -13px;
             margin-bottom: 0; 
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             margin-bottom: -15px;
             margin-left: 0; 
         }
@@ -700,16 +702,16 @@ html[dir="rtl"]{
     .language-about .about-content {
         padding-left: 0;
         padding-right: 40px;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-right: 0;
         }
     }
     .language-about .about-image-gallery {
         padding: 80px 0px 20px 30px !important;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             text-align: center !important;
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             padding: 80px 0 20px 0 !important;
         }
 
@@ -717,35 +719,35 @@ html[dir="rtl"]{
     .language-about .about-image-gallery .main-img-wrapper .main-img-inner {
         left: 32px;
         right: inherit;
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             left: -72px;
         }
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             left: -80px;
         }
     }
     .language-about .about-image-gallery .main-img-wrapper .main-img-inner::after {
         right: inherit;
         left: 20px;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
            left: 134px; 
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             left: 20px;
         }
     }
     .faq-style-6 .edu-faq-gallery {
         bottom: -115px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             left: 0px; 
         }
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             bottom: 0px; 
         }
     }
     .faq-style-6 .edu-faq-gallery .thumbnail-1 {
         text-align: left;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             text-align: center;
         }
     }
@@ -811,7 +813,7 @@ html[dir="rtl"]{
     .testimonial-area-9 .home-health-testimonial-activator .swiper-navigation {
         left: inherit; 
         right: 34px;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             right: 0;
         }
     }
@@ -942,7 +944,7 @@ html[dir="rtl"]{
             .about-content {
                 padding-left: inherit;
                 padding-right: 80px;
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                    padding-right: 0;
                 }
             }
@@ -955,10 +957,10 @@ html[dir="rtl"]{
             .award-status {
                 left: inherit;
                 right: -20px;
-                @media #{$custom-lg-device-eight} {
+                @media #{variable.$custom-lg-device-eight} {
                     right: 20px;
                 }
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     right: 20px;
                 }
             }
@@ -982,7 +984,7 @@ html[dir="rtl"]{
                 .main-img-2 {
                     right: inherit;
                     left: 0;
-                    @media #{$md-layout} {
+                    @media #{variable.$md-layout} {
                         left: 115px;
                     }
                 }
@@ -1180,7 +1182,7 @@ html[dir="rtl"]{
     }
     .about-style-9 .about-content {
         padding-right: 45px;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
            padding-right: 0; 
         }
     }
@@ -1242,7 +1244,7 @@ html[dir="rtl"]{
                         top: 0;
                         left: inherit;
                         right: 135px;
-                        @media #{$lg-layout-1} {
+                        @media #{variable.$lg-layout-1} {
                             right: 0;
                         }
                     }
@@ -1265,7 +1267,7 @@ html[dir="rtl"]{
             &::after {
                 right: inherit;
                 left: -18px;
-                @media #{$smlg-device} {
+                @media #{variable.$smlg-device} {
                     left: -11px;
                 }
             }
@@ -1291,7 +1293,7 @@ html[dir="rtl"]{
             .thumbnail {
                 margin-right: inherit;
                 margin-left: 30px;
-                @media #{$large-mobile} {
+                @media #{variable.$large-mobile} {
                     margin-left: 0;
                 }
             }
@@ -1367,7 +1369,7 @@ html[dir="rtl"]{
         .campus-content {
             margin-left: inherit;
             margin-right: -120px;
-            @media #{$smlg-device} {
+            @media #{variable.$smlg-device} {
                 margin-right: 0;
             }
             .features-box {
@@ -1410,7 +1412,7 @@ html[dir="rtl"]{
     .counterup-area-2 .counterup-box-wrap .counterup-box .edu-counterup:first-child {
         border-right: none;
         border-left: 0.8px solid var(--color-border);
-        @media #{$small-mobile} {
+        @media #{variable.$small-mobile} {
             border-left: none;
         }
     }
@@ -1421,7 +1423,7 @@ html[dir="rtl"]{
     .counterup-area-7 .counterup-box-wrap .counterup-box .edu-counterup:first-child {
         border-right: none;
         border-left: 0.8px solid var(--color-border);
-        @media #{$small-mobile} {
+        @media #{variable.$small-mobile} {
             border-left: none;
         }
     }
@@ -1463,7 +1465,7 @@ html[dir="rtl"]{
             padding-left: inherit;
             padding-right: 40px;
 
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 &:nth-child(2) {
                     border-left: none;
                 }
@@ -1588,7 +1590,7 @@ html[dir="rtl"]{
             .thumbnail {
                 margin-right: inherit;
                 margin-left: 30px;
-                @media #{$large-mobile} {
+                @media #{variable.$large-mobile} {
                     margin-left: 0;
                 }
 
@@ -1665,16 +1667,16 @@ html[dir="rtl"]{
         left: -100px;
     }
     .course-area-8 ul .section-title {
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             text-align: center;
         }
     }
     .edu-cta-banner-area-6 .section-title.section-left {
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             text-align: center;
             padding: 70px 110px;
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             padding: 50px 60px;
         }
     }
@@ -1761,7 +1763,7 @@ html[dir="rtl"]{
                         padding-left: 0;
                         padding-right: 40px;
 
-                        @media #{$sm-layout} {
+                        @media #{variable.$sm-layout} {
                            padding-right: 0; 
                         }
 
@@ -1960,7 +1962,7 @@ html[dir="rtl"]{
                 &::after {
                     right: inherit;
                     left: 0;
-                    @media #{$sm-layout} {
+                    @media #{variable.$sm-layout} {
                         height: 1px;
                         width: 100%;
                         bottom: 0;
@@ -2206,7 +2208,7 @@ html[dir="rtl"]{
     .faq-page-nav {
         padding-right: inherit;
         padding-left: 60px;
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             padding-left: 0;
         }
         .nav-tabs {
@@ -2400,7 +2402,7 @@ html[dir="rtl"]{
             &.explore-widget {
                 margin-left: 0;
                 margin-right: 65px;
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     margin-right: 0;
                 }
             }
@@ -2408,7 +2410,7 @@ html[dir="rtl"]{
                 button {
                     margin-left: inherit !important;
                     margin-right: 10px !important;
-                    @media #{$sm-layout} {
+                    @media #{variable.$sm-layout} {
                         margin-right: 0 !important;
                     }
                 }
@@ -2519,7 +2521,7 @@ html[dir="rtl"]{
 
     //privacy
     .privacy-policy {
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             padding-right: 0;
         }
         ul {
@@ -2610,10 +2612,10 @@ html[dir="rtl"]{
         .thumbnail {
             margin-right: inherit;
             margin-left: 130px;
-            @media #{$md-layout} {
+            @media #{variable.$md-layout} {
                 margin-left: 50px;
             }
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 margin-left: 0;
             }
         }

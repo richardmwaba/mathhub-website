@@ -1,13 +1,15 @@
+@use "../../default/variable";
+
 //Faq Style
 .faq-style-5 {
 	.section-title {
-		@media #{$md-layout-1} {
+		@media #{variable.$md-layout-1} {
 			text-align: center;
 		}
 	}
 	.edu-faq-gallery {
 		.thumbnail-1 {
-			@media #{$md-layout-1} {
+			@media #{variable.$md-layout-1} {
 				text-align: center;
 			}
 		}

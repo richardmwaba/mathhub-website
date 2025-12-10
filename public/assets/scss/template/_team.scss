@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*-------------------
   Team Styles
 ---------------------*/
@@ -259,10 +262,10 @@
              &.shape-1 {
                 bottom: -20px;
                 left: 135px;
-                @media #{$lg-layout-1} {
+                @media #{variable.$lg-layout-1} {
 					left: 0px;
 				}
-                @media #{$custom-lg-device-eight} {
+                @media #{variable.$custom-lg-device-eight} {
 					left: -70px;
 				}
             }
@@ -380,11 +383,11 @@
 }
 
 .team-details-thumb {
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         text-align: center;
         margin-bottom: 50px;
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         text-align: center;
         margin-bottom: 40px;
     }
@@ -400,10 +403,10 @@
 }
 
 .team-details-content {
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         text-align: center;
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         text-align: center;
     }
     .main-info {
@@ -424,10 +427,10 @@
             align-items: center;
             padding-top: 10px;
             flex-wrap: wrap;
-            @media #{$md-layout} {
+            @media #{variable.$md-layout} {
                 justify-content: center;
             }
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 justify-content: center;
             }
             li {

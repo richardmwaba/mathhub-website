@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*-------------------
   404 Error
 ---------------------*/
@@ -24,12 +27,12 @@
         margin-bottom: 60px;
         position: relative;
         display: inline-block;
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             margin-bottom: 50px;
         }
         .shape-group {
             @extend %liststyle;
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 display: none;  
             }
             li {
@@ -61,16 +64,16 @@
         .title {
             font-size: 50px;
             margin-bottom: 10px;
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 font-size: 40px;
             }
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 font-size: 30px;
             }
         }
         .subtitle {
             margin-bottom: 65px;
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 margin-bottom: 50px;
             }
         }
@@ -118,21 +121,21 @@
             &.shape-1 {
                 top: 70px;
                 left: 155px;
-                @media #{$laptop-device} {
+                @media #{variable.$laptop-device} {
                     left: -55px;
                 }
             }
             &.shape-2 {
                 top: 240px;
                 left: 360px;
-                @media #{$laptop-device} {
+                @media #{variable.$laptop-device} {
                     left: 105px;
                 }
             }
             &.shape-3 {
                 top: 170px;
                 right: 19%;
-                @media #{$laptop-device} {
+                @media #{variable.$laptop-device} {
                     right: 0;
                 }
             }
@@ -155,7 +158,7 @@
     .coming-countdown {
         flex-wrap: wrap;
         .countdown-section {
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 margin: 0 15px 30px;
                 .countdown-number {
                     font-size: 35px;
@@ -172,19 +175,19 @@
         color: var(--color-white);
         font-weight: var(--p-extra-bold);
         margin-bottom: 70px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             font-size: 75px;
             margin-bottom: 60px;
         }
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             font-size: 65px;
             margin-bottom: 50px;
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             font-size: 50px;
             margin-bottom: 40px;
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             font-size: 40px;
             margin-bottom: 35px;
         }
@@ -195,7 +198,7 @@
         margin-top: 70px;
         align-items: center;
         padding: 10px;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             margin-top: 30px;
         }
         .form-control {
@@ -208,7 +211,7 @@
         .edu-btn {
             border-radius: 5px !important;
             padding: 0 35px;
-            @media #{$small-mobile} {
+            @media #{variable.$small-mobile} {
                 padding: 0 15px;
             }
         }

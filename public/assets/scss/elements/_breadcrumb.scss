@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*-------------------------
     Breadcrumb
 ---------------------------*/
@@ -7,10 +10,10 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         padding: 70px 0 60px;
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 55px 0 45px;
     }
     .breadcrumb-inner {
@@ -25,10 +28,10 @@
         }
         .title {
             margin-bottom: 12px;
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 font-size: 30px;
             }
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 font-size: 26px;
             }
         }
@@ -75,7 +78,7 @@
         justify-content: center;
         margin-right: -20px;
         margin-left: -20px;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             display: block;
             margin-top: 20px;
         }
@@ -95,7 +98,7 @@
                 position: absolute;
                 top: 4px;
                 right: -20px;
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     display: none;
                 }
             }
@@ -165,13 +168,13 @@
     position: relative;
     z-index: 1;
     padding: 190px 0 180px;
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         padding: 150px 0 140px; 
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 100px 0 90px; 
     }
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         padding: 80px 0 70px; 
     }
     &:before {
@@ -189,7 +192,7 @@
     .page-title {
         width: 70%;
         margin: 0 auto; 
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             width: 100%;
         }
         .title {
@@ -215,10 +218,10 @@
 
 .breadcrumb-style-3 {
     padding: 5px 0 90px;
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         padding: 5px 0 70px;
     } 
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 5px 0 70px;
     }
     .breadcrumb-inner {
@@ -232,10 +235,10 @@
                 font-size: 36px;
                 margin-bottom: 4px;
                 line-height: 1.4;
-                @media #{$sm-layout} {
+                @media #{variable.$sm-layout} {
                     font-size: 30px;
                 }
-                @media #{$large-mobile} {
+                @media #{variable.$large-mobile} {
                     font-size: 26px;
                 }
             }
@@ -243,10 +246,10 @@
         .edu-breadcrumb {
             justify-content: flex-start;
             margin-bottom: 55px;
-            @media #{$md-layout} {
+            @media #{variable.$md-layout} {
                 margin-bottom: 40px;
             }
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 margin-bottom: 40px;
             }
         }
@@ -266,10 +269,10 @@
 
 .breadcrumb-style-4 {
     padding: 110px 0 105px;
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         padding: 80px 0;    
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 60px 0;    
     }
     .page-title {
@@ -282,7 +285,7 @@
         li {
             font-weight: 400;
             color: var(--color-body);
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 justify-content: center;
             }
             i {

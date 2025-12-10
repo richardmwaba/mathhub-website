@@ -1,9 +1,11 @@
+@use "../default/variable";
+
 /*---------------------------
   Section Title
 ----------------------------*/
 .section-title {
     margin-bottom: 44px;
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-bottom: 40px;
     }
     .pre-title {
@@ -19,7 +21,7 @@
     .title {
         margin-bottom: 4px;
         br {
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 display: none;
             }
         }
@@ -43,7 +45,7 @@
 
 .section-title-flex {
     display: flex;
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         display: block;
         text-align: center;  
     }
@@ -53,7 +55,7 @@
         margin-right: 90px;
         margin-bottom: 20px;
         position: relative;
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             text-align: center;  
             margin-right: 0;
         }
@@ -65,7 +67,7 @@
             position: absolute;
             top: 5px;
             right: -45px;
-            @media #{$sm-layout} {
+            @media #{variable.$sm-layout} {
                 display: none;
             }
         }
@@ -90,10 +92,10 @@
         background: linear-gradient(to left, #31B978 0%, #1AB69D 76%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             font-size: 50px;  
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             font-size: 40px;  
         }
     }
@@ -107,10 +109,10 @@
     }
     .title {
         font-size: 40px;
-        @media #{$md-layout} {
+        @media #{variable.$md-layout} {
             font-size: 36px;
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             font-size: 30px;
         }
     }
