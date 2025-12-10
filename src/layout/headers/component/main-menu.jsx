@@ -6,13 +6,13 @@ const MainMenu = () => {
     return (
         <ul className="mainmenu">
             {menu_data.map((menuItem) => (
-                <>
+                <React.Fragment key={menuItem.title}>
                     {!menuItem.submenus ? (
                         <li>
                             <a href={menuItem.link}>{menuItem.title}</a>
                         </li>
                     ) : (
-                        <li key={menuItem.title} className="has-droupdown">
+                        <li className="has-droupdown">
                             <a href={menuItem.link}>{menuItem.title}</a>
                             {!menuItem.mega_menu && (
                                 <ul className="submenu">
@@ -63,7 +63,7 @@ const MainMenu = () => {
                             )}
                         </li>
                     )}
-                </>
+                </React.Fragment>
             ))}
         </ul>
     );
