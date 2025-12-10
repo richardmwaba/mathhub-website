@@ -49,10 +49,10 @@ const HeaderTwo = ({ style_3, no_topBar = false }) => {
                             <div className="header-brand">
                                 <div className="logo">
                                     <Link href="/">
-                                        <a>
-                                            <img className="logo-light" src={style_3 ? '/assets/images/logo/logo-dark.png' : "/assets/images/logo/logo-dark-2.png"} alt="Corporate Logo" />
-                                            <img className="logo-dark" src={style_3 ? '/assets/images/logo/logo-white.png' : "/assets/images/logo/logo-light-2.png"} alt="Corporate Logo" />
-                                        </a>
+
+                                        <img className="logo-light" src={style_3 ? '/assets/images/logo/logo-dark.png' : "/assets/images/logo/logo-dark-2.png"} alt="Corporate Logo" />
+                                        <img className="logo-dark" src={style_3 ? '/assets/images/logo/logo-white.png' : "/assets/images/logo/logo-light-2.png"} alt="Corporate Logo" />
+
                                     </Link>
                                 </div>
                             </div>
@@ -72,20 +72,20 @@ const HeaderTwo = ({ style_3, no_topBar = false }) => {
                                     </li>
 
                                     <li className="icon">
-                                        <Link href="/wishlist">
-                                            <a className="wishlist">
-                                                <i className="icon-22"></i>
-                                                <span className="count">{wishlists?.length}</span>
-                                            </a>
+                                        <Link href="/wishlist" className="wishlist">
+
+                                            <i className="icon-22"></i>
+                                            <span className="count">{wishlists?.length}</span>
+
                                         </Link>
                                     </li>
 
                                     <li className="icon cart-icon">
-                                        <Link href="/cart">
-                                            <a className="cart-icon">
-                                                <i className="icon-3"></i>
-                                                <span className="count">{quantity}</span>
-                                            </a>
+                                        <Link href="/cart" className="cart-icon">
+
+                                            <i className="icon-3"></i>
+                                            <span className="count">{quantity}</span>
+
                                         </Link>
                                         <Cart />
                                     </li>
@@ -111,12 +111,11 @@ const HeaderTwo = ({ style_3, no_topBar = false }) => {
                 <SearchPopup isSearchOpen={isSearchOpen} setIsSearchOpen={setIsSearchOpen} />
                 {/* <!-- End Search Popup  --> */}
             </header>
-
             {/* sidebar start */}
             <OffCanvas isOpen={isOpen} setIsOpen={setIsOpen} />
             {/* sidebar end */}
         </>
-    )
+    );
 }
 
 export default HeaderTwo;

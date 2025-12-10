@@ -49,10 +49,10 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
                             <div className="header-brand">
                                 <div className="logo">
                                     <Link href={'/'}>
-                                        <a>
-                                            <img className="logo-light" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
-                                            <img className="logo-dark" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
-                                        </a>
+
+                                        <img className="logo-light" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
+                                        <img className="logo-dark" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
+
                                     </Link>
                                 </div>
 
@@ -87,9 +87,9 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
                             <div className="header-right">
                                 <ul className="header-action">
                                     <li className="header-btn">
-                                        <Link href="/contact-us">
-                                            <a className="edu-btn btn-medium">Get Started
-                                                <i className="icon-4"></i></a>
+                                        <Link href="/contact-us" className="edu-btn btn-medium">
+                                            Get Started
+                                                                                            <i className="icon-4"></i>
                                         </Link>
                                     </li>
                                     <li className="mobile-menu-bar d-block d-xl-none">
@@ -107,12 +107,11 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
                 <SearchPopup isSearchOpen={isSearchOpen} setIsSearchOpen={setIsSearchOpen} />
                 {/* <!-- End Search Popup  --> */}
             </header>
-
             {/* sidebar start */}
             <OffCanvas isOpen={isOpen} setIsOpen={setIsOpen} />
             {/* sidebar end */}
         </>
-    )
+    );
 }
 
 export default Header;
