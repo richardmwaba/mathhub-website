@@ -1,3 +1,5 @@
+@use "../default/variable";
+
 /*-------------------
   Campus Styles
 ---------------------*/
@@ -5,7 +7,7 @@
     .thumbnail {
         img {
             border-radius: 5px;
-            @media #{$smlg-device} {
+            @media #{variable.$smlg-device} {
                 width: 100%;
             }
         }
@@ -18,11 +20,11 @@
     background-color: var(--color-white);
     margin-left: -120px;
     margin-top: 90px;
-    @media #{$smlg-device} {
+    @media #{variable.$smlg-device} {
         margin-left: 0;  
         margin-top: 20px;
     }
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         box-shadow: none;
         padding: 0;
     }

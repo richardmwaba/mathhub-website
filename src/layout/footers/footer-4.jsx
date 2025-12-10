@@ -58,7 +58,7 @@ const FooterTwo = () => {
                                             <li><span>Add:</span>{add}</li>
                                             <li><span>Call:</span><a href="tel:+011235641231">{call}</a></li>
                                             <li><span>Email:</span><a href="mailto:info@edublink.com"
-                                            target="_blank" rel="noreferrer">{email}</a></li>
+                                                target="_blank" rel="noreferrer">{email}</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@ const FooterTwo = () => {
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
                                             {w.footer_links.map((l, i) => <li key={i}>
-                                            <Link href={`/${l.link}`}><a>{l.title}</a></Link>
+                                                <Link href={`/${l.link}`}>{l.title}</Link>
                                             </li>)}
                                         </ul>
                                     </div>
@@ -100,18 +100,18 @@ const FooterTwo = () => {
 
                 <ul className="shape-group shape-group-2">
                     <motion.li className="shape-1 scene"
-                        animate={ {
+                        animate={{
                             x: mouseDirection(30).x,
                             y: mouseDirection(30).y
-                        } }
+                        }}
                     >
                         <img src="/assets/images/others/shape-06.png" alt="shape" />
                     </motion.li>
                     <motion.li className="shape-2 scene"
-                        animate={ {
+                        animate={{
                             x: mouseReverse(30).x,
                             y: mouseReverse(30).y
-                        } }
+                        }}
                     >
                         <img src="/assets/images/others/shape-07.png" alt="shape" />
                     </motion.li>
@@ -119,18 +119,18 @@ const FooterTwo = () => {
                         <img src="/assets/images/about/shape-10.png" alt="shape" />
                     </li>
                     <motion.li className="shape-4 scene"
-                        animate={ {
+                        animate={{
                             x: mouseReverse(30).x,
                             y: mouseReverse(30).y
-                        } }
+                        }}
                     >
                         <img src="/assets/images/others/shape-08.png" alt="shape" />
                     </motion.li>
                     <motion.li className="shape-5 scene"
-                        animate={ {
+                        animate={{
                             x: mouseDirection(30).x,
                             y: mouseDirection(30).y
-                        } }
+                        }}
                     >
                         <img src="/assets/images/others/shape-09.png" alt="shape" />
                     </motion.li>
@@ -142,7 +142,7 @@ const FooterTwo = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="inner text-center">
-                                <p>Copyright {new Date().getFullYear()} 
+                                <p>Copyright {new Date().getFullYear()}
                                     <a href="https://1.envato.market/AoJezj" rel="noreferrer" target="_blank">EduBlink</a> Designed By <a href="https://1.envato.market/YgGJbj" target="_blank" rel="noreferrer">DevsBlink</a>. All Rights Reserved
                                 </p>
                             </div>

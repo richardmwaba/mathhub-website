@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*--------------------------
     Navigation Styles 
 ----------------------------*/
@@ -19,10 +22,10 @@
                 height: 90px;
                 line-height: 94px;
                 transition: 0.3s;
-                @media #{$lg-layout} {
+                @media #{variable.$lg-layout} {
                     padding: 0 17px;
                 }
-                @media #{$md-layout} {
+                @media #{variable.$md-layout} {
                     padding: 0 12px;
                 }
                 &:hover,
@@ -46,7 +49,7 @@
                         top: 0;
                         font-size: 6px;
                         font-weight: 400;
-                        @media #{$lg-layout} {
+                        @media #{variable.$lg-layout} {
                             right: 0px;
                         }
                     }
@@ -148,7 +151,7 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 pointer-events: none;
-                @media #{$laptop-device} {
+                @media #{variable.$laptop-device} {
                     left: -524px;
                 }
                 @media only screen and (max-width: 1350px) {

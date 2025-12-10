@@ -15,7 +15,7 @@ const BreadcrumbThree = ({ title, subtitle }) => {
                     <ul className="edu-breadcrumb">
                         <li className="breadcrumb-item">
                             <Link href="/">
-                            <a>Home</a>
+                                Home
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
@@ -30,27 +30,27 @@ const BreadcrumbThree = ({ title, subtitle }) => {
                     <span></span>
                 </li>
                 <motion.li className="shape-2 scene"
-                    animate={ {
+                    animate={{
                         x: mouseReverse(40).x,
                         y: mouseReverse(40).y
-                    } }    
+                    }}
                 >
                     <img src="/assets/images/about/shape-13.png" alt="shape" /></motion.li>
                 <motion.li className="shape-3 scene"
-                    animate={ {
+                    animate={{
                         x: mouseDirection(40).x,
                         y: mouseDirection(40).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/about/shape-15.png" alt="shape" /></motion.li>
                 <li className="shape-4">
                     <span></span>
                 </li>
                 <motion.li className="shape-5 scene"
-                    animate={ {
+                    animate={{
                         x: mouseReverse(40).x,
                         y: mouseReverse(40).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/about/shape-07.png" alt="shape" />
                 </motion.li>

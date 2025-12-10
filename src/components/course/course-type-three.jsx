@@ -3,13 +3,11 @@ import Link from 'next/link';
 
 const CourseTypeSeven = ({ data, classes }) => {
     return (
-        <div className={`edu-course course-style-4 ${ classes ? classes : '' }`}>
+        <div className={`edu-course course-style-4 ${classes ? classes : ''}`}>
             <div className="inner">
                 <div className="thumbnail">
                     <Link href={`/course-details/${data.id}`}>
-                        <a>
-                            <img src={`/assets/images/course/course-03/${data.img}`} alt="Course Meta" />
-                        </a>
+                        <img src={`/assets/images/course/course-03/${data.img}`} alt="Course Meta" />
                     </Link>
                     <div className="time-top">
                         <span className="duration"><i className="icon-61"></i>{data.duration}</span>
@@ -20,7 +18,7 @@ const CourseTypeSeven = ({ data, classes }) => {
                     <div className="course-price">${data.course_price}</div>
                     <h6 className="title">
                         <Link href={`/course-details/${data.id}`}>
-                            <a>{data.title}</a>
+                            {data.title}
                         </Link>
                     </h6>
                     <div className="course-rating">

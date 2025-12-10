@@ -27,8 +27,8 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
 
     return (
         <>
-            <header className={`edu-header header-style-${header_style ? header_style : '1'} ${ disable_full_width ? 'disable-header-fullwidth' : 'header-fullwidth' } ${no_top_bar ? 'no-topbar' : ''}`}>
-                { ! no_top_bar && 
+            <header className={`edu-header header-style-${header_style ? header_style : '1'} ${disable_full_width ? 'disable-header-fullwidth' : 'header-fullwidth'} ${no_top_bar ? 'no-topbar' : ''}`}>
+                {!no_top_bar &&
                     <div className="header-top-bar">
                         <div className="container-fluid">
                             <div className="header-top">
@@ -49,14 +49,14 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
                             <div className="header-brand">
                                 <div className="logo">
                                     <Link href={'/'}>
-                                        <a>
-                                            <img className="logo-light" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
-                                            <img className="logo-dark" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
-                                        </a>
+
+                                        <img className="logo-light" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
+                                        <img className="logo-dark" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
+
                                     </Link>
                                 </div>
 
-                                { ! disable_category &&
+                                {!disable_category &&
                                     <div className="header-category">
                                         <nav className="mainmenu-nav">
                                             <ul className="mainmenu">
@@ -66,9 +66,9 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
                                                         {
                                                             categories.map((category, i) => (
                                                                 <li key={i}>
-                                                                    <Link href={`${category.link}`}><a>{category.title}</a></Link>
+                                                                    <Link href={`${category.link}`}>{category.title}</Link>
                                                                 </li>
-                                                            ) )
+                                                            ))
                                                         }
                                                     </ul>
                                                 </li>
@@ -87,9 +87,9 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
                             <div className="header-right">
                                 <ul className="header-action">
                                     <li className="header-btn">
-                                        <Link href="/contact-us">
-                                            <a className="edu-btn btn-medium">Get Started
-                                            <i className="icon-4"></i></a>
+                                        <Link href="/contact-us" className="edu-btn btn-medium">
+                                            Get Started
+                                                                                            <i className="icon-4"></i>
                                         </Link>
                                     </li>
                                     <li className="mobile-menu-bar d-block d-xl-none">
@@ -107,12 +107,11 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
                 <SearchPopup isSearchOpen={isSearchOpen} setIsSearchOpen={setIsSearchOpen} />
                 {/* <!-- End Search Popup  --> */}
             </header>
-
             {/* sidebar start */}
             <OffCanvas isOpen={isOpen} setIsOpen={setIsOpen} />
             {/* sidebar end */}
         </>
-    )
+    );
 }
 
 export default Header;

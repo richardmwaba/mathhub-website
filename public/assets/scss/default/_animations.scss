@@ -1,3 +1,6 @@
+@use "variable";
+@use "shortcode" as *;
+
 /*----------------------
     Animation  
 -----------------------*/
@@ -15,7 +18,7 @@
         position: absolute;
         z-index: -1;
     }
-    @media #{$smlg-device} {
+    @media #{variable.$smlg-device} {
         display: none;
     }
 }

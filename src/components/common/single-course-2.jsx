@@ -6,7 +6,7 @@ import { add_to_wishlist, wishlistItems } from '../../redux/features/wishlist-sl
 
 const SingleCourseTwo = ({ course }) => {
     const { id, img, title, level, rating, rating_count, course_price, lesson, student, duration, short_desc } = course || {};
-    const {cartCourses} = useSelector(state => state.cart);
+    const { cartCourses } = useSelector(state => state.cart);
     const dispatch = useDispatch();
     const wishlists = useSelector(wishlistItems);
     const isWishlistSelected = wishlists.find(w => Number(w.id) === Number(id));
@@ -14,7 +14,7 @@ const SingleCourseTwo = ({ course }) => {
     const handleWishlist = (course_item) => {
         if (wishlists.find(i => i.id === course_item.id)) {
             dispatch(add_to_wishlist({
-                    change_type: 'remove_wishlist', item: {
+                change_type: 'remove_wishlist', item: {
                     id: course_item.id,
                     img: `/assets/images/course/${course_item.img}`,
                     title: course_item.title,
@@ -23,7 +23,7 @@ const SingleCourseTwo = ({ course }) => {
             }))
         } else {
             dispatch(add_to_wishlist({
-                    change_type: 'add_wishlist', item: {
+                change_type: 'add_wishlist', item: {
                     id: course_item.id,
                     img: `/assets/images/course/${course_item.img}`,
                     title: course_item.title,
@@ -36,10 +36,10 @@ const SingleCourseTwo = ({ course }) => {
     // handle add to cart
     const handleAddToCart = (course) => {
         dispatch(cart_course({
-            id:course.id,
-            img:`/assets/images/course/${course.img}`,
-            price:course.course_price,
-            title:course.title
+            id: course.id,
+            img: `/assets/images/course/${course.img}`,
+            price: course.course_price,
+            title: course.title
         }))
     }
 
@@ -49,9 +49,7 @@ const SingleCourseTwo = ({ course }) => {
                 <div className="inner">
                     <div className="thumbnail">
                         <Link href={`/course-details/${id}`}>
-                            <a>
-                                <img src={`/assets/images/course/${img}`} alt="Course Meta" />
-                            </a>
+                            <img src={`/assets/images/course/${img}`} alt="Course Meta" />
                         </Link>
                         <div className="time-top">
                             <span className="duration"><i className="icon-61"></i>{duration}</span>
@@ -98,7 +96,7 @@ const SingleCourseTwo = ({ course }) => {
 
                         <h6 className="title">
                             <Link href={`/course-details/${id}`}>
-                                <a>{title}</a>
+                                {title}
                             </Link>
                         </h6>
 
@@ -123,8 +121,8 @@ const SingleCourseTwo = ({ course }) => {
                         </ul>
 
                         <a onClick={() => handleAddToCart(course)} className="edu-btn btn-secondary btn-small"
-                        style={{ cursor: 'pointer' }}> 
-                            {cartCourses.some(item => item.id === id) ? 'Added to cart' : 'Add to cart'} 
+                            style={{ cursor: 'pointer' }}>
+                            {cartCourses.some(item => item.id === id) ? 'Added to cart' : 'Add to cart'}
                             <i className="icon-4"></i>
                         </a>
                     </div>

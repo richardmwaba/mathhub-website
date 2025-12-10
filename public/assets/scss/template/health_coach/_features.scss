@@ -1,5 +1,7 @@
+@use "../../default/variable";
+
 .features-area-5 {
-    @media #{$md-layout-1} {
+    @media #{variable.$md-layout-1} {
         padding-top: 100px;
     }
     .features-box {
@@ -22,7 +24,7 @@
             box-shadow: var(--shadow-darker);
             padding: 100px 40px 50px 40px;
             border-radius: 5px;
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                margin-bottom: 20px; 
             }
             .title {

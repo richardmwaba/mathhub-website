@@ -2,6 +2,7 @@
 
 # nextJs server
 .next/
+out/
 
 # dependencies
 /node_modules

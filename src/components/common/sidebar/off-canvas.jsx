@@ -6,7 +6,7 @@ const OffCanvas = ({ isOpen, setIsOpen }) => {
     const [navTitle, setNavTitle] = useState('')
 
     const openMobileMenu = (menu) => {
-        if(navTitle === menu){
+        if (navTitle === menu) {
             setNavTitle('')
         }
         else {
@@ -15,15 +15,13 @@ const OffCanvas = ({ isOpen, setIsOpen }) => {
     }
     return (
         <>
-            <div className={`popup-mobile-menu ${isOpen?'active':''}`}>
+            <div className={`popup-mobile-menu ${isOpen ? 'active' : ''}`}>
                 <div className="inner">
                     <div className="header-top">
                         <div className="logo">
                             <Link href="/">
-                                <a>
-                                    <img className="logo-light" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
-                                    <img className="logo-dark" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
-                                </a>
+                                <img className="logo-light" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
+                                <img className="logo-dark" src='/assets/images/logo/mathhub-with-text.png' alt="logo" />
                             </Link>
                         </div>
 
@@ -37,13 +35,13 @@ const OffCanvas = ({ isOpen, setIsOpen }) => {
                     <div className="mm-menu">
                         <ul>
                             {menu_data.map((menu, i) => (
-                                <li key={i} className={!menu.submenus ? '' : navTitle === menu?.title ? 
-                                "has-droupdown active" : "has-droupdown"}>
-                                    {menu.submenus && <button  onClick={() => openMobileMenu(menu.title)}>{menu.title} </button>}
+                                <li key={i} className={!menu.submenus ? '' : navTitle === menu?.title ?
+                                    "has-droupdown active" : "has-droupdown"}>
+                                    {menu.submenus && <button onClick={() => openMobileMenu(menu.title)}>{menu.title} </button>}
 
                                     {!menu.mobile_pages_menu &&
                                         <ul className={navTitle === menu?.title ? "sub-menu active" : "sub-menu"}>
-                                            {menu?.submenus?.map((sub,i) => (
+                                            {menu?.submenus?.map((sub, i) => (
                                                 <li key={i}><Link href={`${sub.link}`}>{sub.title}</Link></li>
                                             ))}
                                         </ul>
@@ -51,12 +49,12 @@ const OffCanvas = ({ isOpen, setIsOpen }) => {
 
                                     {menu.mobile_pages_menu &&
                                         <ul className={navTitle === menu?.title ? "sub-menu active" : "sub-menu"}>
-                                            {menu?.mobile_pages_menu?.map((sub,i) => (
+                                            {menu?.mobile_pages_menu?.map((sub, i) => (
                                                 <li key={i}><Link href={`${sub.link}`}>{sub.title}</Link></li>
                                             ))}
                                         </ul>
                                     }
-                                    
+
                                     {!menu.submenus && <Link href={menu.link}>{menu.title}</Link>}
                                 </li>
                             ))}

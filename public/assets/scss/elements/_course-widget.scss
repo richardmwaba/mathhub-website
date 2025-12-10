@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*-------------------
   Course Widget
 ---------------------*/
@@ -6,7 +9,7 @@
     border-radius: 5px;
     padding: 38px 30px 20px;
     margin-bottom: 50px;
-    @media #{$lg-layout} {
+    @media #{variable.$lg-layout} {
         padding: 38px 20px 20px;
     }
     @media only screen and (max-width: 991px) {
@@ -121,10 +124,10 @@
         }
         .content {
             padding: 30px 25px 25px;
-            @media #{$lg-layout} {
+            @media #{variable.$lg-layout} {
                 padding: 30px 10px 25px;
             }
-            @media #{$small-mobile} {
+            @media #{variable.$small-mobile} {
                 padding: 30px 10px 25px;      
             }
             .course-item {
@@ -190,10 +193,10 @@
 }
 
 .edu-course-sidebar {
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-bottom: 50px; 
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-bottom: 50px; 
     }
 }
@@ -201,10 +204,10 @@
     background-color: var(--color-white);
     border-radius: 5px;
     box-shadow: 0 0 40px 0 rgba(0,0,0, .07);
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
         margin-bottom: 50px; 
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         margin-bottom: 50px; 
     }
     .edu-course-widget {
@@ -236,10 +239,10 @@
     }
     .edu-blog-widget {
         padding: 40px;
-        @media #{$lg-layout} {
+        @media #{variable.$lg-layout} {
             padding: 40px 25px;  
         }
-        @media #{$small-mobile} {
+        @media #{variable.$small-mobile} {
             padding: 40px 25px;  
         }
         .widget-title {

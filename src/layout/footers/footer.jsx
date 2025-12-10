@@ -26,7 +26,7 @@ const footer_contents = {
 
 const { logoDark, logoLight, desc, add, call, email, widgets } = footer_contents;
 
-const Footer = ({ style_2, dark_bg,home_4 }) => {
+const Footer = ({ style_2, dark_bg, home_4 }) => {
     return (
         <footer className={`edu-footer ${style_2 ? style_2 : dark_bg ? 'footer-dark bg-image footer-style-3' : "footer-lighten bg-image footer-style-1"}`}>
             <div className={`footer-top ${style_2 ? "footer-top-2" : ""}`}>
@@ -36,18 +36,18 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
                             <div className="edu-footer-widget">
                                 <div className="logo">
                                     <Link href={'/'}>
-                                        <a>
-                                            {!dark_bg && <>
-                                                {!style_2 && <img className="logo-light" src={logoLight} alt="Corporate Logo" />}
-                                                <img className="logo-dark" src={logoDark} alt="Corporate Logo" />
-                                            </>}
-                                        </a>
+
+                                        {!dark_bg && <>
+                                            {!style_2 && <img className="logo-light" src={logoLight} alt="Corporate Logo" />}
+                                            <img className="logo-dark" src={logoDark} alt="Corporate Logo" />
+                                        </>}
+
                                     </Link>
 
                                     <Link href={'/'}>
-                                        <a>
-                                            {dark_bg && <img className="logo-light" src={home_4?'/assets/images/logo/logo-white.png' :'/assets/images/logo/logo-light-2.png'} alt="Corporate Logo" />}
-                                        </a>
+
+                                        {dark_bg && <img className="logo-light" src={home_4 ? '/assets/images/logo/logo-white.png' : '/assets/images/logo/logo-light-2.png'} alt="Corporate Logo" />}
+
                                     </Link>
                                 </div>
 
@@ -68,7 +68,7 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
                                     <h4 className="widget-title">{w.widget_title}</h4>
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
-                                            {w.footer_links.map((l, i) => <li key={i}><Link href={`/${l.link}`}><a>{l.title}</a></Link></li>)}
+                                            {w.footer_links.map((l, i) => <li key={i}><Link href={`/${l.link}`}>{l.title}</Link></li>)}
                                         </ul>
                                     </div>
                                 </div>
@@ -82,10 +82,10 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
                                     <p className="description">Enter your email address to register to our newsletter subscription.</p>
                                     <div className="input-group footer-subscription-form">
                                         <input type="email" className="form-control" placeholder="Your email" />
-                                        <button className={`edu-btn ${dark_bg && !home_4?'btn-secondary':''} btn-medium`} type="button">Subscribe <i className="icon-4"></i></button>
+                                        <button className={`edu-btn ${dark_bg && !home_4 ? 'btn-secondary' : ''} btn-medium`} type="button">Subscribe <i className="icon-4"></i></button>
                                     </div>
                                     <ul className="social-share icon-transparent">
-                                        <FooterSocial/>
+                                        <FooterSocial />
                                     </ul>
                                 </div>
                             </div>
@@ -93,7 +93,6 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
                     </div>
                 </div>
             </div>
-            
             <div className="copyright-area">
                 <div className="container">
                     <div className="row">
@@ -106,7 +105,7 @@ const Footer = ({ style_2, dark_bg,home_4 }) => {
                 </div>
             </div>
         </footer>
-    )
+    );
 }
 
 export default Footer;

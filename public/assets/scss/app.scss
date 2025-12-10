@@ -73,87 +73,87 @@ STYLESHEET INDEXING
 /*=======================================================================
 1. Default Styles
 =========================================================================*/
-@import "default/variable";
-@import "default/shortcode";
-@import "default/reset";
-@import "default/typography";
-@import "default/form";
-@import "default/common";
-@import "default/animations";
+// Forward shared resources (variables, mixins, placeholders) to make them globally available
+@use "default" as *;
+@use "default/reset";
+@use "default/typography";
+@use "default/form";
+@use "default/common";
+@use "default/animations";
 
 /*=======================================================================
 2. Elements Styles
 =========================================================================*/
-@import "elements/accordion";
-@import "elements/backtotop";
-@import "elements/breadcrumb";
-@import "elements/button";
-@import "elements/countdown";
-@import "elements/course-widget";
-@import "elements/pagination";
-@import "default/sal";
-@import "elements/section-title";
-@import "elements/swiper";
-@import "elements/social-share";
-@import "elements/theme-switcher";
+@use "elements/accordion";
+@use "elements/backtotop";
+@use "elements/breadcrumb";
+@use "elements/button";
+@use "elements/countdown";
+@use "elements/course-widget";
+@use "elements/pagination";
+@use "default/sal";
+@use "elements/section-title";
+@use "elements/swiper";
+@use "elements/social-share";
+@use "elements/theme-switcher";
 
 /*=======================================================================
 3. Template Styles
 =========================================================================*/
-@import "template/about";
-@import "template/brand";
-@import "template/call_to_action";
-@import "template/campus";
-@import "template/categorie";
-@import "template/contact";
-@import "template/counterup";
-@import "template/course";
-@import "template/course_details";
-@import "template/event";
-@import "template/faq";
-@import "template/features";
-@import "template/gallery";
-@import "template/hero_banner";
-@import "template/instagram";
-@import "template/pricing";
-@import "template/privacy_policy";
-@import "template/product_details";
-@import "template/shop";
-@import "template/splash";
-@import "template/team";
-@import "template/testimonial";
-@import "template/video";
-@import "template/why_choose";
-@import "template/404";
-@import "template/modern_schooling/main";
-@import "template/health_coach/main";
-@import "template/language_academy/main";
-@import "template/remote_training/main";
+@use "template/about";
+@use "template/brand";
+@use "template/call_to_action";
+@use "template/campus";
+@use "template/categorie";
+@use "template/contact";
+@use "template/counterup";
+@use "template/course";
+@use "template/course_details";
+@use "template/event";
+@use "template/faq";
+@use "template/features";
+@use "template/gallery";
+@use "template/hero_banner";
+@use "template/instagram";
+@use "template/pricing";
+@use "template/privacy_policy";
+@use "template/product_details";
+@use "template/shop";
+@use "template/splash";
+@use "template/team";
+@use "template/testimonial";
+@use "template/video";
+@use "template/why_choose";
+@use "template/404" as error404;
+@use "template/modern_schooling/main";
+@use "template/health_coach/main" as main2;
+@use "template/language_academy/main" as main3;
+@use "template/remote_training/main" as main4;
 
 
 /*=======================================================================
 4.Blocks Styles 
 =========================================================================*/
-@import 'header/header';
-@import 'header/nav';
-@import 'header/header-top';
-@import 'header/header-action';
-@import 'header/mobilemenu';
-@import 'header/search-popup';
-@import "footer/footer";
+@use 'header/header';
+@use 'header/nav';
+@use 'header/header-top';
+@use 'header/header-action';
+@use 'header/mobilemenu';
+@use 'header/search-popup';
+@use "footer/footer";
 
 /*=======================================================================
 5.Blog Styles 
 =========================================================================*/
-@import "blog/blog";
-@import "blog/blog-details";
-@import "blog/comments";
-@import "blog/widget";
+@use "blog/blog";
+@use "blog/blog-details";
+@use "blog/comments";
+@use "blog/widget";
 
 /*=======================================================================
 6. Spacing/Dark
 =========================================================================*/
-@import "default/spacing";
-@import "default/react_specific";
-@import "default/dark";
-@import "default/rtl";
+@use "default/spacing";
+@use "default/react_specific";
+@use "default/dark";
+@use "default/rtl";

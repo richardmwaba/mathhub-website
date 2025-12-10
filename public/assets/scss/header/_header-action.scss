@@ -1,3 +1,6 @@
+@use "../default" as *;
+@use "../default/variable";
+
 /*------------------------
     Header Actions  
 -------------------------*/
@@ -6,13 +9,13 @@
     display: flex;
     align-items: center;
     margin: 0 -20px;
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         margin: 0 -10px;
     }
     li {
         margin: 0 20px;
         line-height: 1;
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             margin: 0 10px;
         }
         &.icon {
@@ -45,7 +48,7 @@
             }
             &.cart-icon {
                 margin-right: 30px;
-                @media #{$large-mobile} {
+                @media #{variable.$large-mobile} {
                     margin-right: 20px;
                 }
             }
@@ -84,7 +87,7 @@
         }
     }
     .header-btn {
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             display: none;
         }
         a {

@@ -1,0 +1,4 @@
+// Forward all shared resources (variables, mixins, placeholders)
+// This makes them available to all files that @use this module
+@forward "variable";
+@forward "shortcode";

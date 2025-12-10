@@ -1,9 +1,11 @@
+@use "../default/variable";
+
 /*-------------------
   Brand Styles
 ---------------------*/
 .brand-section-heading {
     padding-right: 60px;
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         padding-right: 0;      
     }
 }
@@ -39,10 +41,10 @@
     }
     &.brand-style-2 {
         grid-template-columns: repeat(6, 1fr);
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             grid-template-columns: repeat(3, 1fr);  
         }
-        @media #{$small-mobile} {
+        @media #{variable.$small-mobile} {
             grid-template-columns: repeat(2, 1fr);  
         }
         &:after {
@@ -54,15 +56,15 @@
                 border-left: none;
             }
             &:nth-child(2n) {
-                @media #{$small-mobile} {
+                @media #{variable.$small-mobile} {
                     border-right: none;
                 }
             }
             &:nth-child(3n) {
-                @media #{$md-layout-1} {
+                @media #{variable.$md-layout-1} {
                     border-right: none;
                 }
-                @media #{$small-mobile} {
+                @media #{variable.$small-mobile} {
                     border-right: 1px solid #f0f0f0;
                 }
             }
@@ -79,13 +81,13 @@
     }
     &.brand-style-3 {
         grid-template-columns: repeat(5, 1fr);
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             grid-template-columns: repeat(3, 1fr);
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             grid-template-columns: repeat(2, 1fr);
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             grid-template-columns: repeat(1, 1fr);
         }
         gap: 10px;
@@ -111,7 +113,7 @@
     background: #F9F7F4;
     padding: 75px 0;
     overflow: hidden;
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         padding: 50px 0;
     }
     .shape-group {
@@ -127,11 +129,11 @@
                 right: -21px;
                 z-index: 1;
 
-                @media #{$laptop-device} {
+                @media #{variable.$laptop-device} {
                     top: -60px;
                     right: -70px;
                 }
-                @media #{$custom-laptop-device} {
+                @media #{variable.$custom-laptop-device} {
                     display: none;
                 }
             }
@@ -151,25 +153,21 @@
        top: 0;
        width: 100%;
        height: 100%;
-       background-image: url(../../images/bg/bg-image-20.svg);
-
-       svg {
-        background: rgb(247,245,242);
-        background: linear-gradient( -90deg, rgb(247,245,242) 0%, rgba(247,245,242,0.30196) 50%);
-       }
+       background: linear-gradient( -90deg, rgb(247,245,242) 0%, rgba(247,245,242,0.30196) 50%), url(../../images/bg/bg-image-20.svg);
+       background-position: bottom;
     }
-    @media #{$md-layout} {
+    @media #{variable.$md-layout} {
        padding: 380px 0 100px; 
     }
-    @media #{$sm-layout} {
+    @media #{variable.$sm-layout} {
         padding: 260px 0 80px;
         margin-top: 100px;
     }
-    @media #{$md-layout-1} {
+    @media #{variable.$md-layout-1} {
        background: none;
        background-color: #FCFBFA;
     }
-    @media #{$large-mobile} {
+    @media #{variable.$large-mobile} {
         padding: 80px 0 80px;
         margin-top: 80px;
     }

@@ -1,18 +1,20 @@
+@use "../../default/variable";
+
 .faq-style-6 {
     overflow: hidden;
     .edu-faq-content {
         padding-bottom: 120px;
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             padding-bottom: 60px;
         }
     }
     .edu-faq-gallery {
         bottom: -96px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             bottom: -115px;
             left: 40px;
         }
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             left: 0;
             bottom: 0;
         }
@@ -20,7 +22,7 @@
             img {
                 border-radius: 0;
             }
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 text-align: center;
             }
         }
@@ -87,7 +89,7 @@
     }
     .row--45 > [class*="col"], 
     .row--45 > [class*="col-"] {
-        @media #{$laptop-device} {
+        @media #{variable.$laptop-device} {
             padding-left: 40px;
             padding-right: 40px; 
         }   

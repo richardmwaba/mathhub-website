@@ -1,13 +1,15 @@
+@use "../../default/variable";
+
 .hero-style-10 {
     min-height: 890px;
     background: var(--bg-color);
     position: relative;
     top: -110px;
     overflow: hidden;
-    @media #{$smlg-device} {
+    @media #{variable.$smlg-device} {
         min-height: 700px;
     }
-    @media #{$md-layout-1} {
+    @media #{variable.$md-layout-1} {
         min-height: 100%;
     }
 
@@ -16,7 +18,7 @@
         z-index: 2;
         p {
             padding-right: 85px;  
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 padding-right: 0;
             }
         }
@@ -46,14 +48,14 @@
                 }
             }
         }
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             margin-top: 200px;
         }
-        @media #{$sm-layout} {
+        @media #{variable.$sm-layout} {
             margin-top: 150px;
             margin-bottom: 100px;
         }
-        @media #{$large-mobile} {
+        @media #{variable.$large-mobile} {
             margin-bottom: 50px;
         }
     }
@@ -61,26 +63,26 @@
     .banner-thumbnail {
         margin-right: -213px;
         margin-bottom: -170px;
-        @media #{$smlg-device} {
+        @media #{variable.$smlg-device} {
             margin-left: 0;
             margin-right: -70px;
         }
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             margin-bottom: -20px;
             margin-right: 0;
         }
         .instructor-info {
             bottom: 236px;
             left: 27px;
-            @media #{$smlg-device} {
+            @media #{variable.$smlg-device} {
                 bottom: 150px;
                 left: -50px;
             }
-            @media #{$md-layout-1} {
+            @media #{variable.$md-layout-1} {
                 bottom: 250px;
                 left: -16px;
             }
-            @media #{$large-mobile} {
+            @media #{variable.$large-mobile} {
                 display: none;
             }
             .inner {
@@ -175,7 +177,7 @@
         background-size: cover;
         overflow-x:hidden ;
 
-        @media #{$md-layout-1} {
+        @media #{variable.$md-layout-1} {
             display: none;
         }
     }
