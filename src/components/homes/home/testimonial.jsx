@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectCoverflow } from "swiper";
+import { Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
 import Link from 'next/link';
 
 const testimonial_contents = {
