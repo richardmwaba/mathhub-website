@@ -6,7 +6,7 @@ const contents = {
         {
             icon: <NonDegreeProgram />,
             title: 'Cambridge',
-            text: 'Cambridge International Examinations',
+            text: 'Cambridge International Exams',
             courses: 8,
             color: 'color-secondary-style',
             delay: '200',
@@ -24,7 +24,7 @@ const contents = {
         {
             icon: <OnlineDegree />,
             title: 'Pre-University',
-            text: 'University Foundation Undergraduate Courses',
+            text: 'Undergraduate First Year Courses',
             courses: 6,
             color: 'color-primary-style',
             delay: '100',
